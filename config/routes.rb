@@ -1,16 +1,34 @@
-Rails.application.routes.draw do
-  get 'pages/home'
+Mdn2::Application.routes.draw do
+  # You can have the root of your site routed with "root"
+  root 'home#index'
 
-  get 'pages/contact'
+  resources :videos
 
-  get 'pages/aboutus'
+  resources :articles do
+    post :update_row_order, on: :collection
+    get :manage, on: :collection
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  root 'pages#home'
-
+  get "pages/parable"
+  get "pages/donate"
+  get "pages/radio"
+  get "pages/news"
+  get "pages/contact"
+  get "pages/about"
+  get "pages/coaches"
+  get "pages/events"
+  get "pages/manerisms"
+  get "pages/multimedia"
+  get "pages/curriculum"
+  get "pages/biblestudy"
+  get "pages/bootcamp"
+  get "pages/sponsors"
+  get "pages/system"
+  get "pages/elderboard"
+  get "pages/manstats"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
