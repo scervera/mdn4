@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= render "/shared/header" %>
+</head>
+<body>
+	<%= yield %>
+	<%= render "/shared/footer" %>
+	<%= javascript_include_tag 'application', debug: true %>
+
+</body>
+</html>
