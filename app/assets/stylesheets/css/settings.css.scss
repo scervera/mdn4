@@ -403,16 +403,16 @@
 	z-index: 1;
 }
 .tp-dottedoverlay.twoxtwo {
-	background: url(image_path('rev-img/gridtile.png'))
+	background: url(image-path('rev-img/gridtile.png'))
 }
 .tp-dottedoverlay.twoxtwowhite {
-	background: url(image_path('rev-img/gridtile_white.png'))
+	background: url(image-path('rev-img/gridtile_white.png'))
 }
 .tp-dottedoverlay.threexthree {
-	background: url(image_path('rev-img/gridtile_3x3.png'))
+	background: url(image-path('rev-img/gridtile_3x3.png'))
 }
 .tp-dottedoverlay.threexthreewhite {
-	background: url(image_path('rev-img/gridtile_3x3_white.png'))
+	background: url(image-path('rev-img/gridtile_3x3_white.png'))
 }
 /********************************
  -	DOTTED OVERLAYS ENDS	-
@@ -474,21 +474,21 @@
 }
 
 .tp-bannershadow.tp-shadow1 {
-	background: url(image_path('rev-img/shadow1.png')) no-repeat;
+	background: url(image-path('rev-img/shadow1.png')) no-repeat;
 	background-size: 100% 100%;
 	width: 890px;
 	height: 30px;
 	bottom: -30px;
 }
 .tp-bannershadow.tp-shadow2 {
-	background: url(image_path('rev-img/shadow2.png')) no-repeat;
+	background: url(image-path('rev-img/shadow2.png')) no-repeat;
 	background-size: 100% 100%;
 	width: 890px;
 	height: 60px;
 	bottom: -60px;
 }
 .tp-bannershadow.tp-shadow3 {
-	background: url(image_path('rev-img/shadow3.png')) no-repeat;
+	background: url(image-path('rev-img/shadow3.png')) no-repeat;
 	background-size: 100% 100%;
 	width: 890px;
 	height: 60px;
@@ -637,7 +637,7 @@
 .tp-bullets.simplebullets.navbar {
 	border: 1px solid #666;
 	border-bottom: 1px solid #444;
-	background: url(image_path('rev-img/boxed_bgtile.png'));
+	background: url(image-path('rev-img/boxed_bgtile.png'));
 	height: 40px;
 	padding: 0px 10px;
 	-webkit-border-radius: 5px;
@@ -646,7 +646,7 @@
 }
 
 .tp-bullets.simplebullets.navbar-old {
-	background: url(image_path('rev-img/navigdots_bgtile.png'));
+	background: url(image-path('rev-img/navigdots_bgtile.png'));
 	height: 35px;
 	padding: 0px 10px;
 	-webkit-border-radius: 5px;
@@ -657,7 +657,7 @@
 .tp-bullets.simplebullets.round .bullet {
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/bullet.png')) no-repeat top left;
+	background: url(image-path('rev-img/bullet.png')) no-repeat top left;
 	width: 20px;
 	height: 20px;
 	margin-right: 0px;
@@ -672,7 +672,7 @@
 .tp-bullets.simplebullets.round-old .bullet {
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/bullets.png')) no-repeat bottom left;
+	background: url(image-path('rev-img/bullets.png')) no-repeat bottom left;
 	width: 23px;
 	height: 23px;
 	margin-right: 0px;
@@ -687,7 +687,7 @@
 .tp-bullets.simplebullets.square .bullet {
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/bullets2.png')) no-repeat bottom left;
+	background: url(image-path('rev-img/bullets2.png')) no-repeat bottom left;
 	width: 19px;
 	height: 19px;
 	margin-right: 0px;
@@ -702,7 +702,7 @@
 .tp-bullets.simplebullets.square-old .bullet {
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/bullets2.png')) no-repeat bottom left;
+	background: url(image-path('rev-img/bullets2.png')) no-repeat bottom left;
 	width: 19px;
 	height: 19px;
 	margin-right: 0px;
@@ -717,7 +717,7 @@
 .tp-bullets.simplebullets.navbar .bullet {
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/bullet_boxed.png')) no-repeat top left;
+	background: url(image-path('rev-img/bullet_boxed.png')) no-repeat top left;
 	width: 18px;
 	height: 19px;
 	margin-right: 5px;
@@ -736,7 +736,7 @@
 .tp-bullets.simplebullets.navbar-old .bullet {
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/navigdots.png')) no-repeat bottom left;
+	background: url(image-path('rev-img/navigdots.png')) no-repeat bottom left;
 	width: 15px;
 	height: 15px;
 	margin-left: 5px !important;
@@ -783,7 +783,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/large_left.png')) no-repeat top left;
+	background: url(image-path('rev-img/large_left.png')) no-repeat top left;
 	width: 40px;
 	height: 40px;
 }
@@ -791,7 +791,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/large_right.png')) no-repeat top left;
+	background: url(image-path('rev-img/large_right.png')) no-repeat top left;
 	width: 40px;
 	height: 40px;
 	top:50% !important;
@@ -801,7 +801,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/small_left.png')) no-repeat top left;
+	background: url(image-path('rev-img/small_left.png')) no-repeat top left;
 	width: 19px;
 	height: 14px;
 	margin-right: 0px;
@@ -813,7 +813,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/small_right.png')) no-repeat top left;
+	background: url(image-path('rev-img/small_right.png')) no-repeat top left;
 	width: 19px;
 	height: 14px;
 	margin-right: 0px;
@@ -825,7 +825,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrow_left.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrow_left.png')) no-repeat top left;
 	width: 26px;
 	height: 26px;
 	margin-right: 0px;
@@ -836,7 +836,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrow_right.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrow_right.png')) no-repeat top left;
 	width: 26px;
 	height: 26px;
 	margin-right: 0px;
@@ -848,7 +848,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/small_left_boxed.png')) no-repeat top left;
+	background: url(image-path('rev-img/small_left_boxed.png')) no-repeat top left;
 	width: 20px;
 	height: 15px;
 	float: left;
@@ -859,7 +859,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/small_right_boxed.png')) no-repeat top left;
+	background: url(image-path('rev-img/small_right_boxed.png')) no-repeat top left;
 	width: 20px;
 	height: 15px;
 	float: left;
@@ -871,7 +871,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrowleft.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrowleft.png')) no-repeat top left;
 	width: 9px;
 	height: 16px;
 	float: left;
@@ -882,7 +882,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrowright.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrowright.png')) no-repeat top left;
 	width: 9px;
 	height: 16px;
 	float: left;
@@ -901,7 +901,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrow_left2.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrow_left2.png')) no-repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -912,7 +912,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrow_right2.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrow_right2.png')) no-repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -924,7 +924,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrow_left2.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrow_left2.png')) no-repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -935,7 +935,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/arrow_right2.png')) no-repeat top left;
+	background: url(image-path('rev-img/arrow_right2.png')) no-repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -947,7 +947,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/large_left.png')) no-repeat 0 0;
+	background: url(image-path('rev-img/large_left.png')) no-repeat 0 0;
 	width: 40px;
 	height: 40px;
 	top:50% !important;
@@ -956,7 +956,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(image_path('rev-img/large_right.png')) no-repeat 0 0;
+	background: url(image-path('rev-img/large_right.png')) no-repeat 0 0;
 	width: 40px;
 	height: 40px;
 }
@@ -1040,7 +1040,7 @@
 .tp-bannertimer {
 	width: 100%;
 	height: 10px;
-	background: url(image_path('rev-img/timer.png'));
+	background: url(image-path('rev-img/timer.png'));
 	position: absolute;
 	z-index: 200;
 	top: 0px;
@@ -1133,11 +1133,11 @@
 .caption.slidelink a div, .tp-caption.slidelink a div {
 	width: 3000px;
 	height: 1500px;
-	background: url(image_path('rev-img/coloredbg.png')) repeat;
+	background: url(image-path('rev-img/coloredbg.png')) repeat;
 }
 
 .tp-loader {
-	background: url(image_path('rev-img/loader.gif')) no-repeat 10px 10px;
+	background: url(image-path('rev-img/loader.gif')) no-repeat 10px 10px;
 	background-color: #fff;
 	margin: -22px -22px;
 	top: 50%;
