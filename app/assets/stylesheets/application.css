@@ -12,6 +12,7 @@
  * file per style scope.
  *
 
+ *= require font-awesome
  *= require jquery-ui
  *= require_tree .
 
