@@ -15,7 +15,7 @@
  *= require font-awesome
  *= require jquery-ui
  *= require_tree .
- *= require_self
+
  */
 
 
@@ -24,7 +24,7 @@
 @import "css/global.css.scss";
 @import "css/style.css";
 @import "css/responsive.css";
-/*@import "css/skin.less";*/
+@import "css/skin.less";
 @import "css/fancybox.css";
 
 
