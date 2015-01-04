@@ -22,12 +22,14 @@ gem 'jquery-rails'
 # https://github.com/kossnocorp/jquery.turbolinks
 gem 'jquery-turbolinks'
 
+# Bootstrap SASS
+gem 'bootstrap-sass', '~> 3.3.1'
 # Use SASS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 3.2'
 # Use LESS for stylesheets
-gem 'less-rails'
+# gem 'less-rails'
 # Twitter Bootstrap
-gem 'less-rails-bootstrap'
+# gem 'less-rails-bootstrap'
 # Fontawesome Toolkit  https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails"
 # It is also recommended to use Autoprefixer with Bootstrap to add browser vendor prefixes automatically

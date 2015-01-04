@@ -22,7 +22,7 @@
 //= require jquery.flexslider.js
 //= require jquery.fancybox.js
 //= require custom.fancybox.js
-//= require twitter/bootstrap
+//= require bootstrap-sprockets
 //= require html5.js
 //= require modernizr.js
 //= require less.js
