@@ -12,7 +12,6 @@
  * file per style scope.
  *
  *= require twitter/bootstrap
- *= require font-awesome
  *= require jquery-ui
  *= require_tree .
 
