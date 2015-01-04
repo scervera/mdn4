@@ -105,7 +105,7 @@ h1 strong, .h1 strong, h2 strong, .h2 strong, h3 strong, .h3 strong, h2 strong, 
 }
 
 h1 small.border-none, .h1 small.border-none, h2 small.border-none, .h2 small.border-none, h3 small.border-none, .h3 small.border-none, h2 small.border-none, .h2 small.border-none, h4 small.border-none, .h4 small.border-none {
-	border-bottom: 0px;
+	border-bottom: 0;
 }
 .heading-group {
 	padding: 20px 0 0;
@@ -731,7 +731,6 @@ blockquote footer:before, .blockquote-reverse footer:after {
 
  /* This tag edits the color of the template masthead */
 #header {
-	// background: #26211d;
 	background: #660000;
 	background: linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.5) 95%) repeat scroll 0% 0% #890000;
 	position:relative;
@@ -833,7 +832,6 @@ blockquote footer:before, .blockquote-reverse footer:after {
 }
 .navbar-default .dropdown-menu > li > a:hover, .navbar-default .dropdown-menu > li > a:focus {
 	background: none;
-	// color: #26211d;
 	color: #26211d;
 }
 .navbar-default .navbar-toggle .icon-bar {
