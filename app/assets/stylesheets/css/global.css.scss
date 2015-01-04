@@ -170,7 +170,7 @@ input:focus,textarea:focus,.btn:focus,.zoom img{
  3.2) Sprite Icon
  -----------------------------*/
 [class^="icon-"] {
-	background-image: url(image_path('icons.png'));
+	background-image: url(image-path('icons.png'));
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -559,7 +559,7 @@ blockquote footer:before, .blockquote-reverse footer:after {
 	background: rgba(38,33,29,0.64)
 }
 .progress-bar-striped {
-	background:transparent url(image_path('progress-bg.png'));
+	background:transparent url(image-path('progress-bg.png'));
 	
 }
 .progress-bar.slide-ranger {
@@ -587,7 +587,7 @@ blockquote footer:before, .blockquote-reverse footer:after {
  3.12)Breadcrumb Banner Section 
  ----------------------------------------*/
 .breadcrumb-section {
-	background: url(image_path('breadcrumb-bg.jpg')) center 37.3% no-repeat;
+	background: url(image-path('breadcrumb-bg.jpg')) center 37.3% no-repeat;
 	background-size: cover;
 	padding: 31px 0 42px;
 /*	margin-bottom: 59px;*/
