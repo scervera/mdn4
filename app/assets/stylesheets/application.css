@@ -1,15 +1,3 @@
-/*@import "http://fonts.googleapis.com/css?family=Lato:400,300italic,300,700%7CPlayfair+Display:400,700italic%7CRoboto:300%7CMontserrat:400,700%7COpen+Sans:400,300%7CLibre+Baskerville:400,400italic";
- "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
-@import "css/bootstrap";
-@import "font-awesome";
-@import "css/settings.css";
-@import "css/global.css";
-@import "css/style.css";
-@import "css/responsive.css";
-@import "css/skin.less";
-@import "css/fancybox.css";
-
-
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -23,10 +11,23 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-
+ *= require twitter/bootstrap
  *= require jquery-ui
  *= require_tree .
  *= require_self
  */
+
+/*@import "http://fonts.googleapis.com/css?family=Lato:400,300italic,300,700%7CPlayfair+Display:400,700italic%7CRoboto:300%7CMontserrat:400,700%7COpen+Sans:400,300%7CLibre+Baskerville:400,400italic";
+ "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
+
+@import "font-awesome";
+@import "css/settings.css";
+@import "css/global.css";
+@import "css/style.css";
+@import "css/responsive.css";
+@import "css/skin.less";
+@import "css/fancybox.css";
+
+
 
 
