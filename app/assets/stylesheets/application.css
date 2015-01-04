@@ -12,13 +12,14 @@
  * file per style scope.
  *
  *= require twitter/bootstrap
+ *= require font-awesome
  *= require jquery-ui
  *= require_tree .
  *= require_self
  */
 
 
-@import "font-awesome";
+/* @import "font-awesome"; */
 @import "css/settings.css.scss";
 @import "css/global.css.scss";
 /*@import "css/style.css";
