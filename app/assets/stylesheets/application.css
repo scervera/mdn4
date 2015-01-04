@@ -17,9 +17,6 @@
  *= require_self
  */
 
-/*@import "http://fonts.googleapis.com/css?family=Lato:400,300italic,300,700%7CPlayfair+Display:400,700italic%7CRoboto:300%7CMontserrat:400,700%7COpen+Sans:400,300%7CLibre+Baskerville:400,400italic";
- "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
-
 @import "font-awesome";
 @import "css/settings.css";
 @import "css/global.css";
