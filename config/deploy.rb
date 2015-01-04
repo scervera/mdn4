@@ -3,7 +3,7 @@ lock '3.3.5'
 
 set :application, 'mdnapp'
 
-set :repo_url, 'ssh://puppet.thecerveras.com/var/git/mdn2.git'
+set :repo_url, 'ssh://puppet.thecerveras.com/var/git/mdn3.git'
 #set :repo_url, 'ssh://quark.thecerveras.com/git/mdn2.git'
 #set :repo_url, 'ssh://quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :repo_url, 'https://adm1n:redeemed1@quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'

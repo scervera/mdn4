@@ -21,12 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: true
-  database: mdn3_data
-  username: coach
-  password: psalm344!4theKing
-  socket: /var/run/mysqld/mysqld.sock
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: db/production.sqlite3
