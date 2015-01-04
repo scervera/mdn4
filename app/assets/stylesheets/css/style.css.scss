@@ -322,7 +322,7 @@
  ----------------------------------------*/
 .parallax-section {
 	min-height: 434px;
-	background: url(/assets/volunteer.jpg) 0 0 no-repeat;
+	background: url(image-path('volunteer.jpg')) 0 0 no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -379,7 +379,7 @@
  2.5) Testimonial Section
  ----------------------------------------*/
 .testimonial {
-	background: url(/assets/bg-testimonials.jpg) center 0 no-repeat;
+	background: url(image-path('bg-testimonials.jpg')) center 0 no-repeat;
 	background-size: cover;
 	text-align: center;
 	position: relative;
@@ -1432,7 +1432,7 @@ main-slider .tp-caption .btn.btn-default {
 }
 /*helping-child*/
 .helping-child {
-	background: url(../img/parallax-banner-02.jpg) center 0 no-repeat;
+	background: url(image-path('parallax-banner-02.jpg')) center 0 no-repeat;
 	background-size: cover;
 	padding: 103px 0 127px;
 	margin-bottom: 60px;
@@ -1999,7 +1999,7 @@ aside ul.archives li span {
 }
 /*save lives*/
 .save-lives {
-	background: url(../img/save-lives.jpg) center 0 no-repeat;
+	background: url(image-path('save-lives.jpg')) center 0 no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 72px 0 86px;
@@ -2425,10 +2425,10 @@ aside ul.archives li span {
 	width: 95px;
 	height: 13px;
 	display: inline-block;
-	background: url(../img/inactive.png) left center repeat-x;
+	background: url(image-path('inactive.png')) left center repeat-x;
 }
 .active-star {
-	background: url(../img/active.png) left center repeat-x;
+	background: url(image-path('active.png')) left center repeat-x;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -2962,7 +2962,7 @@ body .ui-widget-header {
 20.) Launch Page
  ----------------------------------------*/
 #wrapper.launch {
-	background: url(../img/launch-bg.jpg) no-repeat top center !important;
+	background: url(image-path('launch-bg.jpg')) no-repeat top center !important;
 }
 
 .launch #header {

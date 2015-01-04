@@ -82,7 +82,7 @@
 	}
 	/*mission page*/
 	.processes {
-		background:url(image_path('dotted-line.png')) no-repeat scroll -1px 14px;
+		background:url(image-path('dotted-line.png')) no-repeat scroll -1px 14px;
 		background-size:100%;
 		
 	}
@@ -1493,7 +1493,7 @@ border:none;
 		transform: translateY(0px) !important;
 	}
 	.parallax-section {
-		background: url(image_path('volunteer.jpg')) no-repeat 0 0;
+		background: url(image-path('volunteer.jpg')) no-repeat 0 0;
 		min-height: 434px;
 		background-size: cover;
 	}
@@ -1524,7 +1524,7 @@ border:none;
 		transform: translateY(0px) !important;
 	}
 	.parallax-section {
-		background: url(image_path('volunteer.jpg')) no-repeat 0 0;
+		background: url(image-path('volunteer.jpg')) no-repeat 0 0;
 		background-size: cover;
 		min-height: 434px;
 	}
