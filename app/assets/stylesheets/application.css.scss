@@ -1,4 +1,18 @@
 
+/* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "css/settings.css.scss";
+@import "css/global.css.scss";
+@import "css/style.css.scss";
+@import "css/responsive.css.scss";
+@import "css/skin.css.scss";
+@import "css/fancybox.css";
+@import "bootstrap-theme.css";
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -18,18 +32,6 @@
 
 
  */
-
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
-@import "css/settings.css";
-@import "css/global.css.scss";
-@import "css/style.css";
-@import "css/responsive.css";
-@import "css/skin.scss";
-@import "css/fancybox.css";
-@import "bootstrap-theme.css";
 
 
 
