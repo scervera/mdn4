@@ -15,6 +15,6 @@
 /log/*.log
 /tmp
 /themeforest-9195328-charity-nonprofitngofundraising-html-template
-/config/secrets.yml
+config/secrets.yml
 
-/.capistrano
+.capistrano

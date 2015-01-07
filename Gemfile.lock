@@ -47,6 +47,9 @@ GEM
     capistrano-rails (1.1.2)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-secrets-yml (1.0.0)
+      capistrano (>= 3.1)
+      sshkit (>= 1.2.0)
     capistrano-stats (1.1.1)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
@@ -196,7 +199,9 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3.1)
   cancan
+  capistrano
   capistrano-rails
+  capistrano-secrets-yml (~> 1.0.0)
   carrierwave
   cells
   coffee-rails (~> 4.0.0)
