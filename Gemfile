@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-require 'bundler/capistrano'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
@@ -56,6 +56,7 @@ group :development do
   gem 'capistrano' #, '~> 3.2.1'
   gem 'capistrano-rails'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
+  gem 'capistrano-bundler'
 end
 
 # Bundle the extra gems:
