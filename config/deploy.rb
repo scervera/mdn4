@@ -1,6 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '3.3.5'
 
+
 set :application, 'mdnapp'
 
 set :repo_url, 'ssh://puppet.thecerveras.com/var/git/mdn3.git'
