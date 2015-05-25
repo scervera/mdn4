@@ -1,6 +1,8 @@
 # Load DSL and set up stages
 require 'capistrano/setup'
 
+#https://github.com/capistrano-plugins/capistrano-ssh-doctor 
+require 'capistrano/ssh_doctor'
 # Include default deployment tasks
 require 'capistrano/deploy'
 

@@ -2,7 +2,7 @@
 lock '3.3.5'
 
 
-set :application, 'mdnapp'
+set :application, 'mdn3app'
 
 set :repo_url, 'ssh://puppet.thecerveras.com/var/git/mdn3.git'
 #set :repo_url, 'ssh://quark.thecerveras.com/git/mdn2.git'
@@ -17,7 +17,7 @@ set :ssh_options, { :forward_agent => true }
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/mdnapp'
+set :deploy_to, '/var/www/mdn3app'
 set :keep_releases, 5
 # Default value for :scm is :git
 set :scm, :git
@@ -35,9 +35,9 @@ set :rails_env, 'production'
 set :pty, true
 
 #From old deploy.rb file, not sure if they work in new format
-set :ssh_options, { :forward_agent => true }
-set :user, "adm1n"
-set :group, "adm1n"
+# set :ssh_options, { :forward_agent => true }
+# set :user, "adm1n"
+# set :group, "adm1n"
 set :use_sudo, false
 #set :shared_children, shared_children + %w{public/uploads}
 
