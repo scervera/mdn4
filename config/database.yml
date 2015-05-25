@@ -24,7 +24,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: true
-  database: mdn3_data
+  database: mdn3data_production
   username: coach_access
   password: 0708SMClfq!
   socket: /var/run/mysqld/mysqld.sock
