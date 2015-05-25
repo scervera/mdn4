@@ -4,9 +4,9 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{ubuntu@amazon1.thecerveras.com}
-role :web, %w{ubuntu@amazon1.thecerveras.com}
-role :db,  %w{ubuntu@amazon1.thecerveras.com}
+role :app, %w{adm1n@sandbox.thecerveras.com}
+role :web, %w{adm1n@sandbox.thecerveras.com}
+role :db,  %w{adm1n@sandbox.thecerveras.com}
 
 
 # Extended Server Syntax
@@ -15,7 +15,7 @@ role :db,  %w{ubuntu@amazon1.thecerveras.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'amazon1.thecerveras.com', user: 'ubuntu', roles: %w{web app db}, my_property: :my_value
+server 'sandbox.thecerveras.com', user: 'adm1n', roles: %w{web app db}, my_property: :my_value
 
 
 # Custom SSH Options
@@ -25,11 +25,11 @@ server 'amazon1.thecerveras.com', user: 'ubuntu', roles: %w{web app db}, my_prop
 #
 # Global options
 # --------------
-set :ssh_options, {
-    keys: %w(~/.ssh/amazon_ec2_key.pem),
-    forward_agent: false,
-    auth_methods: %w(password publickey)
-  }
+# set :ssh_options, {
+#     keys: %w(~/.ssh/amazon_ec2_key.pem),
+#     forward_agent: false,
+#     auth_methods: %w(password publickey)
+#   }
 #
 # And/or per server (overrides global)
 # ------------------------------------
