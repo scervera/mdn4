@@ -10,12 +10,11 @@
 				<%= render "/shared/banner_slider" %>
 				<!-- banner slider End Here -->
 				
-
-			    <!-- Our Causes Section Start Here-->
-			    <section class="our-causes our-causes-section our-causes3">
+			<!-- Our Causes Section Start Here-->
+			<section class="our-causes our-causes-section our-causes3">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12"> 
+							<div class="col-xs-12">
 								<header class="page-header section-header">
 									<h2>You can help lots of people by donating little. <strong>See our causes</strong></h2>
 									<span>Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes </span>
@@ -25,7 +24,7 @@
 									<div class="items zoom">
 										<a href="#" class="img-thumb">
 										<figure>
-											<%= image_tag("our-cause-pic.jpg")%>
+											<img src="assets/img/our-cause-pic.jpg" alt="">
 										</figure> </a>
 										<div class="item-content">
 											<h3>Help african children to have homes</h3>
@@ -45,7 +44,7 @@
 									<div class="items zoom">
 										<a href="#" class="img-thumb">
 										<figure>
-											<%= image_tag("img-slide-05.jpg") %>
+											<img src="assets/img/img-slide-05.jpg" alt="">
 										</figure> </a>
 										<div class="item-content">
 											<h3>African girls need your help for educations</h3>
@@ -65,7 +64,7 @@
 									<div class="items zoom">
 										<a href="#" class="img-thumb">
 										<figure>
-											<%= image_tag("img-slide-03.jpg") %>
+											<img src="assets/img/img-slide-03.jpg" alt="">
 										</figure> </a>
 										<div class="item-content">
 											<h3>Help african children need food lreom ipsum</h3>
@@ -106,7 +105,7 @@
 									</div>
 								</div>
 								<div class="video-section">
-									<%= image_tag("video-pic2.jpg") %> 
+									<img  src="assets/img/video-pic2.jpg" data-video="http://www.youtube.com/embed/wN3gueLT0D8?autoplay=1" alt=""> 
 									<div class="control">
 										<h2>Watch our media video</h2>
 										<a href="#" class="play-btn"> <i class="fa fa-play-circle-o"></i> </a>
@@ -116,16 +115,16 @@
 							<div class="col-md-4">
 								<h2>How you can help ? <span>See Below </span></h2>
 								<div class="help-block">
-									<h3><a href="our-story.html"><%= image_tag("megaphone.svg") %>Media Helping</a></h3>
+									<h3><a href="our-story.html"><img src="assets/svg/megaphone.svg" alt="Media Help" />Media Helping</a></h3>
 									<p>Duis id sodales metus, eu efficitur massa tiam consequat tellus at sem pulvinar efficitur.Nunc id tortor rutrum orci blandit efficitur. </p>
 								</div>
 								<div class="help-block">
-									<h3><a href="volunteer.html"><%= image_tag("user.svg") %>Become Volunteer </a></h3>
+									<h3><a href="volunteer.html"><img src="assets/svg/user.svg"  alt="Become Volunteer" />Become Volunteer </a></h3>
 									<p>Duis id sodales metus, eu efficitur massa tiam consequat tellus at sem pulvinar efficitur.Nunc id tortor rutrum orci blandit efficitur. </p>
 								</div>
 								<div class="help-block">
 									<h3><a href="external.html" data-toggle="modal" data-target=".donate-form">
-										<%= image_tag("heart.svg") %>Send Donation</a></h3>
+										<img src="assets/svg/heart.svg" alt="Send Donation" />Send Donation</a></h3>
 									<p>Duis id sodales metus, eu efficitur massa tiam consequat tellus at sem pulvinar efficitur.Nunc id tortor rutrum orci blandit efficitur. </p>
 								</div>
 							</div>
@@ -133,6 +132,8 @@
 					</div>
 				</section>
 				<!-- How To Help Section End Here-->
+
+				
 
 				<!-- Latest News Section Start Here -->
 				<section class="latest-news news-section news-section3">
@@ -147,7 +148,7 @@
 										<div class="row">
 										<a href="#" class="img-thumb col-md-5">
 										<figure>
-											<%= image_tag("img-slide-05.jpg") %>
+											<img src="assets/img/img-slide-05.jpg" alt="">
 										</figure> </a>
 										<div class="media col-md-7">
 											<h3>Blog News Heading Title</h3>
@@ -164,7 +165,7 @@
 										<div class="row">
 										<a href="#" class="img-thumb col-md-5">
 										<figure>
-											<%= image_tag("slide-banner-01.jpg") %>
+											<img src="assets/img/slide-banner-01.jpg" alt="">
 										</figure> </a>
 										<div class="media col-md-7">
 											<h3>Blog News Heading Title</h3>
@@ -181,11 +182,11 @@
 							<div class="col-xs-12 col-md-5">
 								
 								<div class="volunteer-reward">
-									<%= image_tag("get-involved.png", class: "get-involved-pic") %> 
+									<img src="assets/img/get-involved.png" alt="" class="get-involved-pic">
 									<div class="reward-apply">
 									<header class="page-header">
 										<span class="svg-shape user-svg-shape">
-												<%= image_tag("user.svg", class: "svg", alt: "Get Involved") %>
+												<img src="assets/svg/user.svg" class="svg" alt="Get Involved">
 											</span>
 										<strong class="get-involved">GET 
 											<span>INVOLVED</span>
@@ -217,7 +218,7 @@
 									    <li>
 									    	<div class="testimonial-content">
 									    	<div class="img-circle photo-frame">
-									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
+									    		<img src="assets/img/img-testimonial.jpg" alt="" class="img-circle">
 									    	</div>
 									      	<blockquote>
 												<p> <i class="fa fa-quote-left quote-mark"></i>
@@ -233,7 +234,7 @@
 									    <li>
 									      <div class="testimonial-content">
 									    	<div class="img-circle photo-frame">
-									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
+									    		<img src="assets/img/img-testimonial.jpg" alt="" class="img-circle">
 									    	</div>
 									      	<blockquote>
 												<p> <i class="fa fa-quote-left quote-mark"></i>
@@ -249,7 +250,7 @@
 									    <li>
 									      <div class="testimonial-content">
 									    	<div class="img-circle photo-frame">
-									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
+									    		<img src="assets/img/img-testimonial.jpg" alt="" class="img-circle">
 									    	</div>
 									      	<blockquote>
 												<p> <i class="fa fa-quote-left quote-mark"></i>
@@ -272,10 +273,10 @@
 				</section>
 				<!--Testimonial Section End Here -->
 
-		    </div>
+			</div>
 
-			<!--Content End Here -->
-			<!--Footer Section Start Here -->
+	<!--Content End Here -->
+	<!--Footer Section Start Here -->
 			<footer id="footer">
 				<div class="container">
 					<div class="row">
@@ -353,7 +354,8 @@
 					</div>
 				</div>
 			</footer>
-			<!--Footer Section End Here -->
+	<!--Footer Section End Here -->
+
 		</div>
 		<!-- join now form popup -->
 		<div class="modal join-now-form">
@@ -559,9 +561,11 @@
 									</div>
 								</div>
 							</div>
+
 						</form>
 					</div>
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
-		</div> 
+		</div>
 		<!-- donation form popup -->
+

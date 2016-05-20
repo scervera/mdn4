@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/home'
-  get 'pages/home3'
+  get "pages/home3"
 
   get 'pages/contact'
 
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root 'pages#home3'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
