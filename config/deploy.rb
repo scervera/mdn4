@@ -4,10 +4,10 @@ lock '3.3.5'
 
 set :application, 'mdn3app'
 
-set :repo_url, 'ssh://adm1n@quark.thecerveras.com/Volumes/Data/git/mdn3.git'
-#set :repo_url, 'ssh://quark.thecerveras.com/git/mdn2.git'
-#set :repo_url, 'ssh://quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
-#set :repo_url, 'https://adm1n:redeemed1@quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
+set :repo_url, 'ssh://adm1n@quark.cerveraweb.com/Volumes/Data/git/mdn3.git'
+#set :repo_url, 'ssh://quark.cerveraweb.com/git/mdn2.git'
+#set :repo_url, 'ssh://quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
+#set :repo_url, 'https://adm1n:redeemed1@quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :git_https_username, 'adm1n'
 #set :git_https_password, 'redeemed1'
 set :ssh_options, { :forward_agent => true }
@@ -17,7 +17,7 @@ set :ssh_options, { :forward_agent => true }
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/www/mdn3app'
+set :deploy_to, '/var/mdn3app'
 set :keep_releases, 5
 # Default value for :scm is :git
 set :scm, :git
