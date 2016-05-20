@@ -25,7 +25,7 @@ production:
   encoding: utf8
   reconnect: true
   database: mdn3data_production
-  username: <%= ENV['MDN3APP_USER_MYSQL_USER'] %>
+  username: 'root'
   password: <%= ENV['MDN3APP_USER_MYSQL_PASSWORD'] %>
   socket: /var/run/mysqld/mysqld.sock
   pool: 5
