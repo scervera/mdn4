@@ -17,7 +17,7 @@ set :ssh_options, { :forward_agent => true }
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/mdn3app'
+set :deploy_to, '/var/www/mdn3app'
 set :keep_releases, 5
 # Default value for :scm is :git
 set :scm, :git
