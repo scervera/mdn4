@@ -4,10 +4,13 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com }
-role :web, %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
-role :db,  %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
+#role :app, %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com }
+#role :web, %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
+#role :db,  %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
 
+role :app, %w{adm1n@railroad.cerveraweb.com}
+role :web, %w{adm1n@railroad.cerveraweb.com}
+role :db, %w{adm1n@railroad.cerveraweb.com}
 
 # Extended Server Syntax
 # ======================
@@ -15,8 +18,8 @@ role :db,  %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'cloud1.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
-server 'cloud2.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
+server 'railroad.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
+server 'railroad.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
 
 
 # Custom SSH Options
