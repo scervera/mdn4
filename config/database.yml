@@ -28,7 +28,7 @@ production:
  # username: <%= ENV['MDN3APP_USER_MYSQL_USER'] %>
 #  password: <%= ENV['MDN3APP_USER_MYSQL_PASSWORD'] %>
   username: 'coach_access'
-  password: '0708SMClfq'
+  password: '0708SMClfq!'
   socket: /var/run/mysqld/mysqld.sock
   pool: 5
   timeout: 5000
