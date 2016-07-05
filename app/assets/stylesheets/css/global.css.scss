@@ -587,9 +587,11 @@ blockquote footer:before, .blockquote-reverse footer:after {
  3.12)Breadcrumb Banner Section 
  ----------------------------------------*/
 .breadcrumb-section {
-	background: url(image-path('breadcrumb-bg.jpg')) center 37.3% no-repeat;
+	// background: url(image-path('breadcrumb-bg.jpg')) center 37.3% no-repeat;
+	background: url(image-path('photos/family_look_like.jpg')) center 37.3% no-repeat;
 	background-size: cover;
-	padding: 31px 0 42px;
+	// padding: 31px 0 42px;
+	padding: 50px 0 200px;
 /*	margin-bottom: 59px;*/
 }
 .breadcrumb-section h1 {

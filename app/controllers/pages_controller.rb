@@ -1,13 +1,17 @@
 class PagesController < ApplicationController
-  def home
-  end
+	layout "interior"
+  # def home
+  # end
 
-  def home3
-  end
+  # def home3
+  # end
 
   def contact
   end
 
   def aboutus
+  end
+
+  def weapons
   end
 end

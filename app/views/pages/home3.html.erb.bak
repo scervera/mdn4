@@ -10,33 +10,29 @@
 				<%= render "/shared/banner_slider" %>
 				<!-- banner slider End Here -->
 				
-			<!-- Our Causes Section Start Here-->
-			<section class="our-causes our-causes-section our-causes3">
+
+			    <!-- Our Causes Section Start Here-->
+			    <section class="our-causes our-causes-section our-causes3">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12"> 
 								<header class="page-header section-header">
-									<h2>You can help lots of people by donating little. <strong>See our causes</strong></h2>
-									<span>Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes </span>
+									<h2>Our mission is to assist the local church in discipling its men. <strong>Find out how</strong></h2>
+									<span>The local Church is God's plan A...there is no plan B. Failure is not an option. And yet, many pastors and men's leaders feel like
+									they are struggling to reach their men and keep their interest. MDN can help. </span>
 								</header>
 								<div class="row">
 								<div class="col-xs-12 col-md-4 item-wrapper">
 									<div class="items zoom">
 										<a href="#" class="img-thumb">
 										<figure>
-											<img src="assets/img/our-cause-pic.jpg" alt="">
+											<%= image_tag("photos/system_of_discipleship_md.jpg")%>
 										</figure> </a>
 										<div class="item-content">
-											<h3>Help african children to have homes</h3>
-											<span class="donation">Donation : <span class="value">$78,354 / $1,26,500</span></span>
-											<div class="progress-bar-section">
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%;"></div>
-												</div>
-												<span class="progress-value-number">35%</span>
-											</div>
+											<h3>Equipping the local church with a system of discipleship.</h3>
+											
 											<p>Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...</p>
-											<a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">donate now</a>
+											<a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">read more</a>
 										</div>
 									</div>
 								</div>
@@ -44,19 +40,13 @@
 									<div class="items zoom">
 										<a href="#" class="img-thumb">
 										<figure>
-											<img src="assets/img/img-slide-05.jpg" alt="">
+											<%= image_tag("photos/weapons_md.jpg") %>
 										</figure> </a>
 										<div class="item-content">
-											<h3>African girls need your help for educations</h3>
-											<span class="donation">Donation : <span class="value">$78,354 / $1,26,500</span></span>
-											<div class="progress-bar-section">
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%;"></div>
-												</div>
-												<span class="progress-value-number">35%</span>
-											</div>
+											<h3>Curriculum for men inspired by Scripture, taught by you.</h3>
+											
 											<p>Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...</p>
-											<a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">donate now</a>
+											<a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">read more</a>
 										</div>
 									</div>
 								</div>
@@ -64,19 +54,13 @@
 									<div class="items zoom">
 										<a href="#" class="img-thumb">
 										<figure>
-											<img src="assets/img/img-slide-03.jpg" alt="">
+											<%= image_tag("photos/dbc_alter_call_md.jpg") %>
 										</figure> </a>
 										<div class="item-content">
-											<h3>Help african children need food lreom ipsum</h3>
-											<span class="donation">Donation : <span class="value">$78,354 / $1,26,500</span></span>
-											<div class="progress-bar-section">
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%;"></div>
-												</div>
-												<span class="progress-value-number">35%</span>
-											</div>
+											<h3>Discipleship Boot Camp&#174; - Truth that transforms</h3>
+											
 											<p>Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...</p>
-											<a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">donate now</a>
+											<a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">read more</a>
 										</div>
 									</div>
 								</div>
@@ -92,7 +76,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8">
-								<h2>We can change <span>life with the help to people africa </span></h2>
+								<h2>We can change families <span>one man at a time</span></h2>
 								<p class="message">Fusce suscipit varius mium sociis natoque penatibus magnis dis parturient montes nascetur ridiculus mususce feugiat malesua orbi nunc odio gravida. cursus nec luctus a loremaecenas tristique orci ac semuis ultricies pharetra magna.</p>
 								<div class="row">
 									<div class="col-md-6">
@@ -105,9 +89,11 @@
 									</div>
 								</div>
 								<div class="video-section">
-									<img  src="assets/img/video-pic2.jpg" data-video="http://www.youtube.com/embed/wN3gueLT0D8?autoplay=1" alt=""> 
+									<%= image_tag("photos/weapons_wd.jpg", :data => {:video => 'https://player.vimeo.com/video/167131139'}) %> 
 									<div class="control">
-										<h2>Watch our media video</h2>
+										<h2>Why W.E.A.P.O.N.S.?</h2>
+
+
 										<a href="#" class="play-btn"> <i class="fa fa-play-circle-o"></i> </a>
 									</div>
 								</div>
@@ -115,16 +101,16 @@
 							<div class="col-md-4">
 								<h2>How you can help ? <span>See Below </span></h2>
 								<div class="help-block">
-									<h3><a href="our-story.html"><img src="assets/svg/megaphone.svg" alt="Media Help" />Media Helping</a></h3>
+									<h3><a href="our-story.html"><%= image_tag("megaphone.svg") %>Media Helping</a></h3>
 									<p>Duis id sodales metus, eu efficitur massa tiam consequat tellus at sem pulvinar efficitur.Nunc id tortor rutrum orci blandit efficitur. </p>
 								</div>
 								<div class="help-block">
-									<h3><a href="volunteer.html"><img src="assets/svg/user.svg"  alt="Become Volunteer" />Become Volunteer </a></h3>
+									<h3><a href="volunteer.html"><%= image_tag("user.svg") %>Become Volunteer </a></h3>
 									<p>Duis id sodales metus, eu efficitur massa tiam consequat tellus at sem pulvinar efficitur.Nunc id tortor rutrum orci blandit efficitur. </p>
 								</div>
 								<div class="help-block">
 									<h3><a href="external.html" data-toggle="modal" data-target=".donate-form">
-										<img src="assets/svg/heart.svg" alt="Send Donation" />Send Donation</a></h3>
+										<%= image_tag("heart.svg") %>Send Donation</a></h3>
 									<p>Duis id sodales metus, eu efficitur massa tiam consequat tellus at sem pulvinar efficitur.Nunc id tortor rutrum orci blandit efficitur. </p>
 								</div>
 							</div>
@@ -133,8 +119,6 @@
 				</section>
 				<!-- How To Help Section End Here-->
 
-				
-
 				<!-- Latest News Section Start Here -->
 				<section class="latest-news news-section news-section3">
 					<div class="container anim-section">
@@ -142,13 +126,13 @@
 							<div class="col-xs-12 col-md-7">
 								<div class="row">
 									<header class="page-header section-header col-md-12 clearfix">
-										<h2>Latest News <strong>Charity</strong></h2>
+										<h2>Latest <strong>MDN</strong> News</h2>
 									</header>
 									<div class="items zoom col-xs-12 col-md-12">
 										<div class="row">
 										<a href="#" class="img-thumb col-md-5">
 										<figure>
-											<img src="assets/img/img-slide-05.jpg" alt="">
+											<%= image_tag("img-slide-05.jpg") %>
 										</figure> </a>
 										<div class="media col-md-7">
 											<h3>Blog News Heading Title</h3>
@@ -165,7 +149,7 @@
 										<div class="row">
 										<a href="#" class="img-thumb col-md-5">
 										<figure>
-											<img src="assets/img/slide-banner-01.jpg" alt="">
+											<%= image_tag("slide-banner-01.jpg") %>
 										</figure> </a>
 										<div class="media col-md-7">
 											<h3>Blog News Heading Title</h3>
@@ -182,11 +166,11 @@
 							<div class="col-xs-12 col-md-5">
 								
 								<div class="volunteer-reward">
-									<img src="assets/img/get-involved.png" alt="" class="get-involved-pic">
+									<%= image_tag("get-involved.png", class: "get-involved-pic") %> 
 									<div class="reward-apply">
 									<header class="page-header">
 										<span class="svg-shape user-svg-shape">
-												<img src="assets/svg/user.svg" class="svg" alt="Get Involved">
+												<%= image_tag("graphics/TestSVG.svg", class: "svg", alt: "Get Involved") %>
 											</span>
 										<strong class="get-involved">GET 
 											<span>INVOLVED</span>
@@ -211,22 +195,22 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h2>What Donation Holders say </h2>
+								<h2>Hear What the Church Has to Say </h2>
 								<div class="col-xs-12 col-md-12">
 									<div class="flexslider">
 									  <ul class="slides">
 									    <li>
 									    	<div class="testimonial-content">
 									    	<div class="img-circle photo-frame">
-									    		<img src="assets/img/img-testimonial.jpg" alt="" class="img-circle">
+									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
 									    	</div>
 									      	<blockquote>
 												<p> <i class="fa fa-quote-left quote-mark"></i>
-													Morbi dignissim tristique turpis sed sodales. In tincidunt dapibus semper. Nullam non orci eu massa tempus aliquam! Quisque placerat metus at neque aliquam sit amet iaculis
+													[The W.E.A.P.O.N.S. curriculum] really encouraged us to rally behind our pastor and pray for him. It showed our men to follow God's leadership and authority in our life and how to unite as one for a common purpose - God. After this weekend’s workshop the men re-united and came together setting aside their differences. It really made a difference. 
 												</p>
 												<footer>
-													<span>Jhon doe</span>
-													<cite>(New media of Marketing firm)</cite>
+													<span>Brandon Dawson</span>
+													<cite>House on the Rock, Far Rockaway, NY</cite>
 												</footer>
 											</blockquote>
 											</div>
@@ -234,15 +218,15 @@
 									    <li>
 									      <div class="testimonial-content">
 									    	<div class="img-circle photo-frame">
-									    		<img src="assets/img/img-testimonial.jpg" alt="" class="img-circle">
+									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
 									    	</div>
 									      	<blockquote>
 												<p> <i class="fa fa-quote-left quote-mark"></i>
-													Morbi dignissim tristique turpis sed sodales. In tincidunt dapibus semper. Nullam non orci eu massa tempus aliquam! Quisque placerat metus at neque aliquam sit amet iaculis
+													"The [W.E.A.P.O.N.S.] intensive program was very informative and refreshing in that it presented a simple and sustainable strategy for enhancing the effectiveness of any men's ministry and for developing lay leaders through the W.E.A.P.O.N.S curriculum. It's a must have in every men's ministry toolkit." 
 												</p>
 												<footer>
-													<span>Jhon doe</span>
-													<cite>(New media of Marketing firm)</cite>
+													<span>Pastor Corey Johnson</span>
+													<cite>Shelter Rock Church, Manhasset, NY</cite>
 												</footer>
 											</blockquote>
 											</div>
@@ -250,19 +234,36 @@
 									    <li>
 									      <div class="testimonial-content">
 									    	<div class="img-circle photo-frame">
-									    		<img src="assets/img/img-testimonial.jpg" alt="" class="img-circle">
+									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
 									    	</div>
 									      	<blockquote>
 												<p> <i class="fa fa-quote-left quote-mark"></i>
-													Morbi dignissim tristique turpis sed sodales. In tincidunt dapibus semper. Nullam non orci eu massa tempus aliquam! Quisque placerat metus at neque aliquam sit amet iaculis
+													I strongly recommend the W.E.A.P.O.N.S Curriculum to every church and encourage the leadership to get to know Pastor Scott Caesar and his MDN Coaches.  They will help your Men’s Ministry reach new heights…Whether you are a new believer or a veteran Christian, a young adult or an older adult, the “W.E.A.P.O.N.S. Curriculum” can help you begin your journey on how to become more knowledgeable in being the man that God has created you to be.
 												</p>
 												<footer>
-													<span>Jhon doe</span>
-													<cite>(New media of Marketing firm)</cite>
+													<span>Samuel Baez, Men's Leader</span>
+													<cite>Assembly of God, Center Moriches, NY</cite>
 												</footer>
 											</blockquote>
 											</div>
 									    </li>
+									    <li>
+									      <div class="testimonial-content">
+									    	<div class="img-circle photo-frame">
+									    		<%= image_tag("img-testimonial.jpg", class: "img-circle") %>
+									    	</div>
+									      	<blockquote>
+												<p> <i class="fa fa-quote-left quote-mark"></i>
+													The Saturday Men’s Discipleship Intensive Training...was very informative, engaging  and well attended. It’s wonderful to see the many men from different Christian denominations participate. The exploratory presentation of the materials were clear, meaningful and comprehensible. Pastors whose Churches embrace this material lay the ground work for men using serious bible based materials which connects them with their God and fellow brothers, which promotes spiritual wellness in our church communities.
+												</p>
+												<footer>
+													<span>Victor Rubianes, Men's Facilitator</span>
+													<cite>Crossway Church and Christian Center</cite>
+												</footer>
+											</blockquote>
+											</div>
+									    </li>
+
 									  </ul>
 								</div>
 								<!-- End Flex -->
@@ -273,10 +274,10 @@
 				</section>
 				<!--Testimonial Section End Here -->
 
-			</div>
+		    </div>
 
-	<!--Content End Here -->
-	<!--Footer Section Start Here -->
+			<!--Content End Here -->
+			<!--Footer Section Start Here -->
 			<footer id="footer">
 				<div class="container">
 					<div class="row">
@@ -354,8 +355,7 @@
 					</div>
 				</div>
 			</footer>
-	<!--Footer Section End Here -->
-
+			<!--Footer Section End Here -->
 		</div>
 		<!-- join now form popup -->
 		<div class="modal join-now-form">
@@ -561,11 +561,9 @@
 									</div>
 								</div>
 							</div>
-
 						</form>
 					</div>
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
-		</div>
+		</div> 
 		<!-- donation form popup -->
-
