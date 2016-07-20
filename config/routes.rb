@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'pages/home'
   get "pages/home3"
   get "pages/weapons"
+  match "weapons" => "pages#weapons", via: :get
+
   get 'pages/contact'
 
   get 'pages/aboutus'
