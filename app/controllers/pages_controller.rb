@@ -14,4 +14,15 @@ class PagesController < ApplicationController
 
   def weapons
   end
+
+  def system
+  end
+
+  def bootcamp
+  end
+
+  def donate
+  end
+
+
 end
