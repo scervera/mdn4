@@ -23,9 +23,9 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 
 # Bootstrap SASS
-gem 'bootstrap-sass', '>= 3.3.1'
+gem 'bootstrap-sass' #, '>= 3.3.1'
 # Use SASS for stylesheets
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails'#, '>= 3.2'
 # Use LESS for stylesheets
 # gem 'less-rails'
 # Twitter Bootstrap
