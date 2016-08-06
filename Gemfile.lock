@@ -258,7 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap-sass (~> 3.3.1)
+  bootstrap-sass (>= 3.3.1)
   cancan
   capistrano
   capistrano-bundler
@@ -272,7 +272,7 @@ DEPENDENCIES
   execjs
   font-awesome-rails
   haml
-  jbuilder (~> 2.0)
+  jbuilder (>= 2.0)
   jquery-rails
   jquery-turbolinks
   jquery-ui-rails
