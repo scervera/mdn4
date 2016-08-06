@@ -6,13 +6,16 @@ class PagesController < ApplicationController
   # def home3
   # end
 
-  def contact
-  end
-
   def aboutus
   end
 
-  def weapons
+  def contact
+  end
+
+  def coaches
+  end
+
+  def curriculum
   end
 
   def system
@@ -23,6 +26,8 @@ class PagesController < ApplicationController
 
   def donate
   end
-
+  
+  def lesson_sample
+  end
 
 end
