@@ -33,7 +33,7 @@ gem 'sass-rails'#, '>= 3.2'
 # Fontawesome Toolkit  https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails"
 # It is also recommended to use Autoprefixer with Bootstrap to add browser vendor prefixes automatically
-gem 'autoprefixer-rails'
+gem 'autoprefixer-rails', '>= 6.3'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
