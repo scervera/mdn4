@@ -258,7 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap-sass (>= 3.3.1)
+  bootstrap-sass
   cancan
   capistrano
   capistrano-bundler
@@ -286,7 +286,7 @@ DEPENDENCIES
   rails (= 4.2)
   ranked-model
   rubygems-bundler
-  sass-rails (>= 3.2)
+  sass-rails
   sdoc (~> 0.4.0)
   slick_rails
   spring
