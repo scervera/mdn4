@@ -72,6 +72,7 @@ gem 'profanity_filter'
 #gem 'rmagick' #, '2.13.2' #, :git=>'http://github.com/rmagick/rmagick.git'# gem 'mini_magick'
 gem 'carrierwave'
 gem 'mime-types'
+gem 'mime-types-data', '~> 3.2015', '>= 3.2015.1120'
 gem 'cancan'
 
 # Slick carousel https://github.com/guyisra/slickjs_rails     http://kenwheeler.github.io/slick/
