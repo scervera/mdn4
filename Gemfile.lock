@@ -257,7 +257,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  autoprefixer-rails (>= 6.3)
+  autoprefixer-rails
   bootstrap-sass
   cancan
   capistrano
