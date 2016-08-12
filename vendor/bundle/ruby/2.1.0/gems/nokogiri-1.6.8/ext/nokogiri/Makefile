@@ -30,8 +30,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20160726-12266-1cvq4ez
-sitelibdir = $(DESTDIR)./.gem.20160726-12266-1cvq4ez
+sitearchdir = $(DESTDIR)./.gem.20160808-58554-xitpfc
+sitelibdir = $(DESTDIR)./.gem.20160808-58554-xitpfc
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -120,8 +120,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = . $(libdir) /Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxml2/2.9.4/lib /Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.29/lib /usr/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxml2/2.9.4/lib -L/Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.29/lib -L/usr/lib
+libpath = . $(libdir) /Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxml2/2.9.4/lib /Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.29/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxml2/2.9.4/lib -L/Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.29/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log

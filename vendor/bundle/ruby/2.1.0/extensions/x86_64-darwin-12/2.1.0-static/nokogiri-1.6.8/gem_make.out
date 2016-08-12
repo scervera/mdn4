@@ -136,5 +136,5 @@ rm -rf /Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.
 rm -rf /Users/scervera/rails_apps/mdn3/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.8/ports
 
 make "DESTDIR=" install
-/usr/bin/install -m 0755 nokogiri.bundle ./.gem.20160726-12266-1cvq4ez/nokogiri
+/usr/bin/install -m 0755 nokogiri.bundle ./.gem.20160808-58554-xitpfc/nokogiri
 installing default nokogiri libraries
