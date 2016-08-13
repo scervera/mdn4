@@ -10,5 +10,5 @@ linking shared-object unf_ext.bundle
 ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
 
 make "DESTDIR=" install
-/usr/bin/install -m 0755 unf_ext.bundle ./.gem.20160813-38570-ofin6m
+/usr/bin/install -m 0755 unf_ext.bundle ./.gem.20160813-55940-1bju565
 installing default unf_ext libraries

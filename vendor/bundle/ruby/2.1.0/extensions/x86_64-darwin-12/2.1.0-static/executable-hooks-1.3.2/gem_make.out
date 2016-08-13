@@ -1,5 +1,5 @@
 /Users/scervera/.rvm/rubies/ruby-2.1.1/bin/ruby extconf.rb 
-capistrano 3.2.1
+capistrano 3.6.0
 erubis 2.7.0
 nokogiri 1.6.8
 rack 1.6.4
