@@ -10,5 +10,5 @@ linking shared-object ruby_http_parser.bundle
 ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
 
 make "DESTDIR=" install
-/usr/bin/install -m 0755 ruby_http_parser.bundle ./.gem.20160808-58554-15cm5t4
+/usr/bin/install -m 0755 ruby_http_parser.bundle ./.gem.20160813-38570-1nh657f
 installing default ruby_http_parser libraries

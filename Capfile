@@ -22,7 +22,8 @@ require 'capistrano/secrets_yml'
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
-# require 'capistrano/rvm'
+# See https://github.com/capistrano/rvm for configuration options
+require 'capistrano/rvm'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'

@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .js.coffee assets and views
@@ -53,7 +52,8 @@ gem 'mysql2', '~> 0.3.14'
 # Use Capistrano for deployment
 
 group :development do
-  gem 'capistrano' #, '~> 3.2.1'
+  gem 'capistrano', '~> 3.2.1'
+  gem 'capistrano-rvm'
   gem 'capistrano-rails'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
   gem 'capistrano-bundler'
