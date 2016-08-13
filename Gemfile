@@ -47,8 +47,8 @@ gem 'ranked-model'
 gem 'spring',        group: :development
 
 # Use mysql2 
-gem 'mysql2', '~> 0.4.4'
-#gem 'mysql2', '~> 0.3.14'
+#gem 'mysql2', '~> 0.4.4'
+gem 'mysql2', '~> 0.3.14'
 
 # Use Capistrano for deployment
 
