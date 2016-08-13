@@ -52,7 +52,7 @@ gem 'mysql2', '~> 0.3.14'
 # Use Capistrano for deployment
 
 group :development do
-  gem 'capistrano', '~> 3.2.1'
+  gem 'capistrano'#, '~> 3.2.1'
   gem 'capistrano-rvm'
   gem 'capistrano-rails'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
