@@ -149,7 +149,7 @@ GEM
     minitest (5.9.0)
     multi_json (1.12.1)
     multipart-post (2.0.0)
-    mysql2 (0.3.21)
+    mysql2 (0.4.4)
     naught (1.1.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -283,7 +283,7 @@ DEPENDENCIES
   mime-types (= 2.6.2)
   mime-types-data
   mini_magick
-  mysql2 (~> 0.3.14)
+  mysql2 (~> 0.4.4)
   paperclip (~> 3.0)
   profanity_filter
   rack
