@@ -30,4 +30,7 @@ class PagesController < ApplicationController
   def lesson_sample
   end
 
+  def testimonies
+  end
+
 end
