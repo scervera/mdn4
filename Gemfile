@@ -79,5 +79,6 @@ gem 'cancan'
 # Slick carousel https://github.com/guyisra/slickjs_rails     http://kenwheeler.github.io/slick/
 gem 'slick_rails'
 gem 'twitter'
+gem 'simple_form'
 # Use debugger
 # gem 'debugger', group: [:development, :test]

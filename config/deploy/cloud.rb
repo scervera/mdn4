@@ -4,13 +4,13 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-#role :app, %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com }
-#role :web, %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
-#role :db,  %w{adm1n@cloud1.cerveraweb.com, adm1n@cloud2.cerveraweb.com}
+#role :app, %w{deploy@cloud1.cerveraweb.com, deploy@railroad.cerveraweb.com}
+#role :web, %w{deploy@cloud1.cerveraweb.com, deploy@railroad.cerveraweb.com}
+#role :db,  %w{deploy@cloud1.cerveraweb.com, deploy@railroad.cerveraweb.com}
 
-role :app, %w{adm1n@railroad.cerveraweb.com}
-role :web, %w{adm1n@railroad.cerveraweb.com}
-role :db, %w{adm1n@railroad.cerveraweb.com}
+#role :app, %w{deploy@railroad.cerveraweb.com}
+#role :web, %w{deploy@railroad.cerveraweb.com}
+#role :db, %w{deploy@railroad.cerveraweb.com}
 
 # Extended Server Syntax
 # ======================
@@ -18,8 +18,9 @@ role :db, %w{adm1n@railroad.cerveraweb.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'railroad.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
-server 'railroad.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
+server 'railroad.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+
 
 
 # Custom SSH Options

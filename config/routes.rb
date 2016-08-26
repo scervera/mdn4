@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'pages/bootcamp'
   match "bootcamp" => "pages#bootcamp", via: :get
 
-  get 'pages/contact'
-  match "contact" => "pages#contact", via: :get
+  get 'pages/contact_us'
+  match "contact_us" => "pages#contact_us", via: :get
 
   get 'pages/coaches'
   match "coaches" => "pages#coaches", via: :get

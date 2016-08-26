@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def aboutus
   end
 
-  def contact
+  def contact_us
   end
 
   def coaches
