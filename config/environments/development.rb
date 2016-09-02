@@ -34,4 +34,17 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # SMTP configurations for Action Mailer
+  config.action_mailer.delivery_method = :smtp
+#  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.mensdiscipleshipnetwork.com",
+    :domain               => 'mensdiscipleshipnetwork.com',
+    :user_name            => 'info@mensdiscipleshipnetwork.com',
+    :password             => 'Psalm344',
+    :port                 => 587,
+    :authentication       => 'login',
+#    :openssl_verify_mode => 'none',
+    :enable_starttls_auto => false  }
 end

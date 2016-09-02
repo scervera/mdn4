@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
 
+  resources :visitors, path_names: { new: 'contact_us' }
+  match "contact_us" => "visitors#new", via: :get
+
+
   get 'pages/aboutus'
   match "aboutus" => "pages#aboutus", via: :get
 
   get 'pages/bootcamp'
   match "bootcamp" => "pages#bootcamp", via: :get
 
-  get 'pages/contact_us'
-  match "contact_us" => "pages#contact_us", via: :get
+  # get 'pages/contact_us'
+  # match "contact_us" => "pages#contact_us", via: :get
 
   get 'pages/coaches'
   match "coaches" => "pages#coaches", via: :get
