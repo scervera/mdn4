@@ -86,7 +86,7 @@ Rails.application.configure do
     :password             => 'Psalm344',
     :port                 => 587,
     :authentication       => 'login',
-#    :openssl_verify_mode => 'none',
-    :enable_starttls_auto => false  }
+    :openssl_verify_mode  => 'none',
+    :enable_starttls_auto => false }
     
 end
