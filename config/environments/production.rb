@@ -83,7 +83,7 @@ Rails.application.configure do
     :address              => "smtp.mensdiscipleshipnetwork.com",
     :domain               => 'mensdiscipleshipnetwork.com',
     :user_name            => 'info@mensdiscipleshipnetwork.com',
-    :password             => 'Psalm344',
+    :password             => 'John1010',
     :port                 => 587,
     :authentication       => 'login',
     :openssl_verify_mode  => 'none',
