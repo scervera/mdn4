@@ -1,5 +1,5 @@
 class VisitorsController < ApplicationController
-  before_action :set_visitor, only: [:show, :edit, :update, :destroy]
+  before_action :set_visitor, only: [:show, :edit, :update, :destroy,  :acknowledge]
   layout "interior"
 
   # GET /visitors
@@ -30,8 +30,10 @@ class VisitorsController < ApplicationController
     respond_to do |format|
       if @visitor.save
         VisitorContact.message_email(@visitor).deliver_later
-        format.html { redirect_to @visitor, notice: 'Visitor was successfully created.' }
-        format.json { render :show, status: :created, location: @visitor }
+        VisitorContact.send_message_email(@visitor).deliver_later
+        # format.html { redirect_to @visitor, notice: 'Visitor was successfully created.' }
+        # format.json { render :show, status: :created, location: @visitor }
+        format.html { render :acknowledge, :notice => 'Message was successfully sent.' }
       else
         format.html { render :new }
         format.json { render json: @visitor.errors, status: :unprocessable_entity }
@@ -61,6 +63,9 @@ class VisitorsController < ApplicationController
       format.html { redirect_to visitors_url, notice: 'Visitor was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def acknowledge
   end
 
   private
