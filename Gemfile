@@ -75,6 +75,8 @@ gem 'carrierwave'
 gem 'mime-types', '2.6.2'
 gem 'mime-types-data' #, '~> 3.2015', '>= 3.2015.1120'
 gem 'cancan'
+# gem to provide styling to mailers https://github.com/Mange/roadie-rails
+gem 'roadie-rails', '~> 1.0'
 
 # Slick carousel https://github.com/guyisra/slickjs_rails     http://kenwheeler.github.io/slick/
 gem 'slick_rails'
