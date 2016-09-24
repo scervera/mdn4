@@ -18,15 +18,15 @@ class PagesController < ApplicationController
   def curriculum
   end
 
+  def donate
+  end
+
   def system
   end
 
   def bootcamp
   end
 
-  def donate
-  end
-  
   def lesson_sample
   end
 
