@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   def aboutus
   end
 
+  def beliefs
+  end
+
   def contact_us
   end
 

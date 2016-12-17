@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   get 'pages/bootcamp'
   match "bootcamp" => "pages#bootcamp", via: :get
+  
+  get 'pages/beliefs'
+  match "beliefs" => "pages#beliefs", via: :get
 
   # get 'pages/contact_us'
   # match "contact_us" => "pages#contact_us", via: :get
