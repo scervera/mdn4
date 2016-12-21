@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+#require 'carrierwave/orm/activerecord'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -22,5 +23,7 @@ module Mdn3
     #config.app_generators.stylesheet_engine :less
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    # for cells registration
+    config.cells.with_assets = ["sponsorbanner_cell"]
   end
 end

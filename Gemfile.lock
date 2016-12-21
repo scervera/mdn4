@@ -71,15 +71,16 @@ GEM
       sshkit (>= 1.2.0)
     capistrano-ssh-doctor (1.0.0)
       capistrano (>= 3.1)
-    carrierwave (0.11.2)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
+    carrierwave (1.0.0.rc)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
       mime-types (>= 1.16)
-      mimemagic (>= 0.3.0)
-    cells (4.1.2)
+    cells (4.1.5)
       tilt (>= 1.4, < 3)
-      uber (>= 0.0.9)
+      uber (>= 0.1.0, < 0.2.0)
+    cells-rails (0.0.6)
+      actionpack (>= 3.0)
+      cells (>= 4.1)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -145,7 +146,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     mime-types (2.6.2)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
     mini_magick (4.5.1)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
@@ -241,6 +241,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
+    trailblazer-cells (0.0.3)
+      cells (>= 4.1.0.rc1, < 5.0.0)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
@@ -257,7 +259,7 @@ GEM
       simple_oauth (~> 0.3.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uber (0.0.15)
+    uber (0.1.0)
     uglifier (3.0.1)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
@@ -280,8 +282,8 @@ DEPENDENCIES
   capistrano-rvm
   capistrano-secrets-yml (~> 1.0.0)
   capistrano-ssh-doctor (~> 1.0)
-  carrierwave
-  cells
+  carrierwave (>= 1.0.0.rc, < 2.0)
+  cells-rails
   coffee-rails
   devise
   execjs
@@ -308,6 +310,7 @@ DEPENDENCIES
   slick_rails
   spring
   sqlite3
+  trailblazer-cells
   turbolinks
   twitter
   uglifier

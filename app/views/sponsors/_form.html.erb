@@ -1,0 +1,17 @@
+<%= simple_form_for(@sponsor) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= select( :sponsor, :level, [['Gold', 1], ['Silver', 2]]) %>
+  </div></br>
+  <div class="form-inputs">
+    <%= f.file_field :logo %>
+  </div>
+</br>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+
+<% end %>
+</br>

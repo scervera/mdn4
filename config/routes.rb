@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :sponsors
+
+  resources :names
+
   resources :visitors, path_names: { new: 'contact_us' }
   match "contact_us" => "visitors#new", via: :get
   get 'visitors/acknowledge'

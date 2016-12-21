@@ -64,14 +64,15 @@ end
 # Bundle the extra gems:
 gem 'haml'
 gem 'devise'
-gem 'cells'
+gem "trailblazer-cells"
+gem 'cells-rails'
 gem 'rack'
 gem "mini_magick"
 gem 'will_paginate'
 gem 'paperclip', '~> 3.0'
 gem 'profanity_filter'
 #gem 'rmagick' #, '2.13.2' #, :git=>'http://github.com/rmagick/rmagick.git'# gem 'mini_magick'
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mime-types', '2.6.2'
 gem 'mime-types-data' #, '~> 3.2015', '>= 3.2015.1120'
 gem 'cancan'
