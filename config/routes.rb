@@ -40,6 +40,9 @@ Rails.application.routes.draw do
   get "pages/lesson_sample"
   match "lesson_sample" => "pages#lesson_sample", via: :get
 
+  get 'pages/ourstory'
+  match "ourstory" => "pages#ourstory", via: :get
+
   get "pages/testimonies"
   match "testimonies" => "pages#testimonies", via: :get
 
