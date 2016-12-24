@@ -8,6 +8,13 @@ class AffiliatesController < ApplicationController
     @affiliates = Affiliate.all
   end
 
+  def sort
+    params[:order].each do |key,value|
+      Affiliate.find(value[:id]).update_attribute(:priority,value[:position])
+    end
+    render :nothing => true
+  end
+
   def affiliatechurches
     @affiliates = Affiliate.all
   end

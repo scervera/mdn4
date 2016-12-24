@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161223232456) do
+ActiveRecord::Schema.define(version: 20161224134644) do
 
   create_table "affiliates", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20161223232456) do
     t.string   "denomination"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "priority"
   end
 
   create_table "messages", force: :cascade do |t|

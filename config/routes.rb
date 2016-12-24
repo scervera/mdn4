@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :affiliates do
     get 'affiliatechurches', :on => :collection
+    put :sort, on: :collection
   end
   match "affiliatechurches" => "affiliates#affiliatechurches", via: :get
 

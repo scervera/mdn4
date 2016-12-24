@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require jquery.ui.touch-punch.min.js
+//= require html.sortable.min.js
 
 //= require jquery.easing.min.js
 //= require jquery.themepunch.plugins.min.js
@@ -28,4 +29,5 @@
 //= require less.js
 //= require snap.svg-min.js
 //= require site.js
+//= affiliates.js
 //= require_tree .
