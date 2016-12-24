@@ -9,6 +9,13 @@ class SponsorsController < ApplicationController
     @sponsors = Sponsor.all
   end
 
+  def sort
+    params[:order].each do |key,value|
+      Sponsor.find(value[:id]).update_attribute(:priority,value[:position])
+    end
+    render :nothing => true
+  end
+
   # GET /sponsors/1
   # GET /sponsors/1.json
   def show

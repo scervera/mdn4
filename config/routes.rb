@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   end
   match "affiliatechurches" => "affiliates#affiliatechurches", via: :get
 
-  resources :sponsors
+  resources :sponsors do
+    put :sort, on: :collection
+  end
 
   resources :names
 

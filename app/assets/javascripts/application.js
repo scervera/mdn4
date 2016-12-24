@@ -30,4 +30,5 @@
 //= require snap.svg-min.js
 //= require site.js
 //= affiliates.js
+//= sponsors.js
 //= require_tree .
