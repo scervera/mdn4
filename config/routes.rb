@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  #resources :affiliates
+
+  resources :affiliates do
+    get 'affiliatechurches', :on => :collection
+  end
+  match "affiliatechurches" => "affiliates#affiliatechurches", via: :get
+
   resources :sponsors
 
   resources :names
