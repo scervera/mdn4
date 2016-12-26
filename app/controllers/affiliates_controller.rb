@@ -1,5 +1,6 @@
 class AffiliatesController < ApplicationController
   before_action :set_affiliate, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:show, :edit, :update, :destroy, :sort]
 
   layout "interior"
   # GET /affiliates

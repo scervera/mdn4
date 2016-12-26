@@ -4,6 +4,8 @@
   <%= render "/shared/header" %>
 </head>
 <body>
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 	<%= yield %>
 	<%= render "/shared/footer" %>
 	<%= javascript_include_tag 'application', debug: true %>
