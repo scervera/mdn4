@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161226122308) do
+ActiveRecord::Schema.define(version: 20161227215411) do
 
   create_table "affiliates", force: :cascade do |t|
     t.string   "name"
@@ -25,6 +25,23 @@ ActiveRecord::Schema.define(version: 20161226122308) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "priority"
+  end
+
+  create_table "jobs", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.boolean  "volunteer"
+    t.boolean  "visible"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "mannerisms", force: :cascade do |t|
+    t.string   "quote"
+    t.string   "author"
+    t.integer  "priority"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
@@ -48,6 +65,7 @@ ActiveRecord::Schema.define(version: 20161226122308) do
     t.datetime "updated_at", null: false
     t.string   "logo"
     t.integer  "priority"
+    t.string   "website"
   end
 
   create_table "users", force: :cascade do |t|

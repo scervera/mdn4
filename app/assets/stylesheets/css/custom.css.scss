@@ -54,6 +54,16 @@
 .mailer_header {height: 30px; width: 100%;}
 
 .sponsors { background: white; }
+.sponsors-thumb {
+	height: 150px;
+	// width: 300px;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+.sponsor-caption {
+	font-size: 10px;
+	height: 50px;
+}
 
 .yellow_btn {
   background-color: #E7BD15;
@@ -70,4 +80,20 @@
 .sortable {
 	display: list-item;
 	// background-color: #002233;
+}
+
+
+.our-sponsors .thumbnail { }
+
+.definition p {
+	line-height: 130%;
+	font-family: Courier;
+}
+.definition {
+	font-family: Courier;
+}
+
+.citation {
+	font-size: 9pt;
+	font-style: italic;
 }

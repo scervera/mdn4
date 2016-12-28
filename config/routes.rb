@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
 
+  resources :mannerisms do
+    get 'man_nerisms', :on => :collection
+    put :sort, on: :collection
+  end
+  match "man_nerisms" => "mannerisms#man_nerisms", via: :get
+
+  resources :jobs do
+    get 'jobslisting', :on => :collection
+  end
+  match "jobslisting" => "jobs#jobslisting", via: :get
+
   #devise_for :users
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
   
@@ -13,7 +24,9 @@ Rails.application.routes.draw do
 
   resources :sponsors do
     put :sort, on: :collection
+    get :oursponsors, on: :collection
   end
+  match "oursponsors" => "sponsors#oursponsors", via: :get
 
   resources :names
 

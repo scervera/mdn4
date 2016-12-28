@@ -10,6 +10,10 @@ class SponsorsController < ApplicationController
     @sponsors = Sponsor.all
   end
 
+  def oursponsors
+    @sponsors = Sponsor.all
+  end
+
   def sort
     params[:order].each do |key,value|
       Sponsor.find(value[:id]).update_attribute(:priority,value[:position])
@@ -79,6 +83,6 @@ class SponsorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sponsor_params
-      params.require(:sponsor).permit(:name, :level, :logo)
+      params.require(:sponsor).permit(:name, :level, :logo, :website)
     end
 end

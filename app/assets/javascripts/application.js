@@ -31,4 +31,5 @@
 //= require site.js
 //= affiliates.js
 //= sponsors.js
+//= mannerisms.js
 //= require_tree .

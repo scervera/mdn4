@@ -1,0 +1,1 @@
+json.array! @mannerisms, partial: 'mannerisms/mannerism', as: :mannerism
