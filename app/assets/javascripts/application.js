@@ -32,4 +32,5 @@
 //= affiliates.js
 //= sponsors.js
 //= mannerisms.js
+//= events.js
 //= require_tree .

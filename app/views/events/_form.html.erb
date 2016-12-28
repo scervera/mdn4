@@ -1,0 +1,20 @@
+<%= simple_form_for(@event) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :event_date %>
+    <%= f.input :event_time %>
+    <%= f.input :location %>
+    <%= f.input :address1 %>
+    <%= f.input :address2 %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zipcode %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

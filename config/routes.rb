@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :events do
+    get 'mdn_events', :on => :collection
+    put :sort, on: :collection
+  end
+  match 'mdn_events' => 'events#mdn_events', via: :get
+
   resources :mannerisms do
     get 'man_nerisms', :on => :collection
     put :sort, on: :collection
