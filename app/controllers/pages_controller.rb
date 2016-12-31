@@ -33,6 +33,9 @@ class PagesController < ApplicationController
   def lesson_sample
   end
 
+  def my_story
+  end
+
   def testimonies
   end
 

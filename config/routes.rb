@@ -78,8 +78,11 @@ Rails.application.routes.draw do
   get "pages/testimonies"
   match "testimonies" => "pages#testimonies", via: :get
 
-    get "pages/vision"
+  get "pages/vision"
   match "vision" => "pages#vision", via: :get
+
+  get "pages/my_story"
+  match "my_story" => "pages#my_story", via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
