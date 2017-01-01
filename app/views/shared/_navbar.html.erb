@@ -5,6 +5,13 @@
 			<a href="/" class="col-xs-12 col-sm-2 brand" title="Welcome to Charity"><%= image_tag('logos/mdn_logo_wh_240.png') %></a>
 			<div class="social-links col-xs-12 col-sm-10">
 				<!-- <a href="/jobslisting" class="btn btn-default btn-volunteer">BECOME VOLUNTEER</a> -->
+				<!-- <#% if user_signed_in? %> -->
+				    <!-- https://github.com/plataformatec/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template -->
+					<ul class="hmenu">
+					  <%= render 'devise/menu/login_items' %>
+					  <%= render 'devise/menu/registration_items' %>
+					</ul>
+				<!-- <#% end %> -->
 				<ul class="social-icons hidden-xs">
 					<li>
 						<a href="https://www.facebook.com/Manhood4God/?ref=page_internal" target="_blank"><i class="fa fa-facebook"></i></a>
