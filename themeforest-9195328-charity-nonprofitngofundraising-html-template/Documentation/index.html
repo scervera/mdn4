@@ -630,7 +630,7 @@ In Charity template we are using Revolution Slider at all 3 Home pages. If you w
       <li>settings.css</li>
       <li>global.css</li>
       <li>responsive.css</li>
-	  <li>skin.css</li>
+	  <li>skin.less</li>
       <li>style.css</li>
     </ol>
 		
@@ -744,32 +744,13 @@ In Charity template we are using Revolution Slider at all 3 Home pages. If you w
 </p></li>
 
 <li><p>
-			<strong>skin.css:-</strong> This style-sheet is used for global settings like global heading fonts, skin color, hover effect etc. So if you want to change these elements then you need to edit this style-sheet. 
+			<strong>skin.less:-</strong> This style-sheet is used for global settings like global heading fonts, skin color, hover effect etc. So if you want to change these elements then you need to edit this style-sheet. 
 			<div class="scrl-sec">
 		<pre class="prettyprint linenums lang-html">
-/*** Global Heading Font-family ***/	
+/*** Global setting for color & Font-family ***/	
+@skinColor:#e7bd15;
+@fontFamily: 'Lato',sans-serif;
 
-.slide-heading, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
- font-family: 'latoblack';
-}	
-
-/*** Buttons, Links ***/
-
-.sign-up .btn-theme, 
-#footer .charity, 
-.list-unstyled li:before, 
-.video-section h2 , 
-.video-section .play-btn ,
-.quote-mark, 
-.footer-logo a,
-.main-slider .banner-slider h2 strong,
-.main-slider .btn, 
-.helping-child .btn-theme, 
-.contact-address a[href^="mailto:"], 
-.slider-third .tp-caption .btn.btn-default
-{
-	color: #ecc731;
-}
 </pre>	
 </div>			
 			</p></li>
@@ -832,6 +813,9 @@ In Charity template we are using Revolution Slider at all 3 Home pages. If you w
 			<li>jquery.flexslider.js</li>
 			<li>
 				site.js
+			</li>
+			<li>
+				less.js
 			</li>
 		</ol>
 		<ol>

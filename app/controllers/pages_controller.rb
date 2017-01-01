@@ -30,9 +30,15 @@ class PagesController < ApplicationController
   def bootcamp
   end
 
+  def leadership_training
+  end
+
   def lesson_sample
   end
 
+  def manstat
+  end
+  
   def my_story
   end
 

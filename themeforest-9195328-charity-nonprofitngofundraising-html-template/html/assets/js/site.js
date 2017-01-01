@@ -324,7 +324,7 @@ if($(window).width()>=768){
 			$('.bottom-line').removeClass('bottom-line');
 			
 			$('.header-second nav>ul').fadeIn();
-		}
+		}
 	})
 }
 //Donate form button
@@ -372,7 +372,7 @@ $( "#slider-range" ).slider({
 			}
 		});
 		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-			" - $" + $( "#slider-range" ).slider( "values", 1 ) ); 	}
+			" - $" + $( "#slider-range" ).slider( "values", 1 ) ); 	}
 //video-placeholder function
        $('.embed-responsive-16by9 img').click(function(){
         video = '<iframe src="'+ $(this).attr('data-video') +'"></iframe>';
@@ -386,7 +386,7 @@ $( "#slider-range" ).slider({
         $('.video-section img').after(video1);
      return false; 	
      
-    });if(!isMobile){
+    });if(!isMobile){
 			var animSection = function() {
 				$('.anim-section').each(function() {
 					if ($(window).scrollTop() > ($(this).offset().top - $(window).height() / 1.15)) {

@@ -16,7 +16,7 @@
 							<div class="col-xs-12 col-sm-3 twitter-update">
 							<h6>Contact info</h6>
 							<address>
-								<span> <i class="fa fa-home"></i> <span>A-2, Sector-63, Noida, 201301, India</span> </span>
+								<span> <i class="fa fa-home"></i> <span>A-2, Melbourne, Australia, 47000, Australia</span> </span>
 								<span> <i class="fa fa-phone-square"></i> <span>+1 707 921 7269</span> </span>
 								<span> <i class="fa fa-envelope"></i> <span><a href="mailto:contact@charity.com">contact@charity.com</a></span> </span>
 							</address>

@@ -69,8 +69,14 @@ Rails.application.routes.draw do
   match "curriculum" => "pages#curriculum", via: :get
   match "weapons" => "pages#curriculum", via: :get
 
+  get "pages/leadership_training"
+  match "leadership_training" => "pages#leadership_training", via: :get
+
   get "pages/lesson_sample"
   match "lesson_sample" => "pages#lesson_sample", via: :get
+
+  get "pages/manstat"
+  match "manstat" => "pages#manstat", via: :get
 
   get 'pages/ourstory'
   match "ourstory" => "pages#ourstory", via: :get

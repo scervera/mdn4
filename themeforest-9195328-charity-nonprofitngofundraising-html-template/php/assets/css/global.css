@@ -378,7 +378,7 @@ padding-top: 20px;
 .content-wrapper .bs-example-notification{
 	padding-bottom:0;
 }
-.alert
+.alert{
 padding:13px 15px;
 font-size:16px;
 line-height:1.5;

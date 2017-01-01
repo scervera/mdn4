@@ -97,6 +97,22 @@
 											<li>
 												<a href="error404.php">404 Error </a>
 											</li>
+											<li>
+												<a href="event.php">event </a>
+											</li>
+											<li>
+												<a href="event-details.php">Event-Details </a>
+											</li>
+											
+											<li>
+												<a href="donation-payment-fail.php">Payment-Fail </a>
+											</li>
+											<li>
+												<a href="donation-payment-success.php">Payment-Success </a>
+											</li>
+											<li>
+												<a href="launch.php">launch </a>
+											</li>
 										</ul>
 									</div>
 									<!-- end  -->

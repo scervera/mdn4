@@ -87,9 +87,9 @@
 						<div class="col-xs-12 col-sm-5 col-sm-offset-1 contact-address">
 							<h2>Get in touch</h2>
 							<address>
-								<span> <strong>Address :</strong> <span>A-2, Sector-63,
+								<span> <strong>Address :</strong> <span>A-2, Melbourne,
 										<br>
-										Noida, 201301, India</span> </span>
+										, Australia, 47000, Australia</span> </span>
 								<span> <strong>E-Mail :</strong> <span><a href="mailto:contact@charity.com">contact@charity.com</a></span> </span>
 								<span> <strong>Tel :</strong> <span><a href="tel:+17079217269">+1 707 921 7269</a></span> </span>
 								<span> <strong>Fax :</strong> <span>+1 206 973 7944</span> </span>

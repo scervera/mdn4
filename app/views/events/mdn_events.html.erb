@@ -20,7 +20,7 @@
         <% @events.each do |event| %>
           <tr>
             <td><a href="#<%= event.title %>"><%= event.title %></a></td>
-            <td><%= event.event_date %></td>
+            <td><%= event.event_date.to_formatted_s(:long)   %></td>
             <td><%= event.event_time.strftime("%I:%M %p") %></td>
             <td><%= event.location %></td>
             <td><%= event.address1 %>,
