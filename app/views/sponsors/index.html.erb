@@ -22,6 +22,7 @@
               <% else %>
                 <td><%= image_tag(sponsor.logo_url(:landscape_sm).to_s) %> </td>
               <% end %>
+              <td><%= sponsor.website %></td>
               <td><%= link_to 'Show', sponsor %></td>
               <td><%= link_to 'Edit', edit_sponsor_path(sponsor) %></td>
               <td><%= link_to 'Delete', sponsor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
