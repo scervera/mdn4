@@ -21,13 +21,6 @@
 					</li>
 
 				</ul>
-				<% if user_signed_in? %>
-				    <!-- https://github.com/plataformatec/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template -->
-					<ul class="hmenu">
-					  <%= render 'devise/menu/login_items' %>
-					  
-					</ul>
-				<% end %>
 			</div>
 		</div>
 	</div>
@@ -170,6 +163,11 @@
 					<li>
 						<a href="/contact_us">Contact Us</a>
 					</li>
+					<% if user_signed_in? %>
+						<li>
+							<%= render 'devise/menu/login_items' %>
+						</li>
+					<% end %>
                     
 				</ul>
 
