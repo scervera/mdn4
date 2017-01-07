@@ -9,6 +9,7 @@
       <thead>
         <tr>
           <th>Event</th>
+          <th></th>
           <th>Date</th>
           <th>Time</th>
           <th>Location</th>
@@ -20,8 +21,18 @@
         <% @events.each do |event| %>
           <tr>
             <td><a href="#<%= event.title %>"><%= event.title %></a></td>
+            <% if event.event_date.past? %>
+                <td><span style="color: red;">Event Completed</span></td>
+            <% else %>
+                <td><span style="color: blue;">There's Still Time!</span></td>    
+            <% end %>        
             <td><%= event.event_date.to_formatted_s(:long)   %></td>
-            <td><%= event.event_time.strftime("%I:%M %p") %></td>
+            <% unless event.event_end_time.blank? %>
+                <td><%= event.event_time.strftime("%I:%M %p") %> - <%= event.event_end_time.strftime("%I:%M %p") %></td>
+            <% else %>
+                <td><%= event.event_time.strftime("%I:%M %p") %></td>
+            <% end %>
+
             <td><%= event.location %></td>
             <td><%= event.address1 %>,
             <% unless event.address2.blank? %>

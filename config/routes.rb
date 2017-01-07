@@ -81,6 +81,9 @@ Rails.application.routes.draw do
   get 'pages/ourstory'
   match "ourstory" => "pages#ourstory", via: :get
 
+  get 'pages/ourfounder'
+  match "ourfounder" => "pages#ourfounder", via: :get
+
   get 'pages/resources'
   match "resources" => "pages#resources", via: :get
 

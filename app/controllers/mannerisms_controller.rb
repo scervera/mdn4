@@ -1,6 +1,6 @@
 class MannerismsController < ApplicationController
   before_action :set_mannerism, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:mannerisms]
+  before_action :authenticate_user!, only: [:show, :edit, :update, :destroy, :sort, :index]
   layout 'interior'
 
   # GET /mannerisms

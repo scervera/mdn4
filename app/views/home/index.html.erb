@@ -59,9 +59,23 @@
 						</div>
 					</div>
 				</div>
-				</div>
 			</div>
 		</div>
+	<section>
+
+	</section class="live-comment">
+	    
+			<article class="media comment margin-top-30 text-center">
+                <div class="media-body">
+                	<% @mannerisms.each do |mannerism| %>
+                  <header>
+                    <h2 class="media-heading"><i class="fa fa-quote-left quote-mark"></i><%= mannerism.quote %><i class="fa fa-quote-right quote-mark"></i></h2>
+                  </header>
+                  <p><em><%= mannerism.author %></em></p>
+                  <% end %>
+                </div>
+            </article>
+		
 	</section>
 	<!-- Our Causes Section End Here-->
 	

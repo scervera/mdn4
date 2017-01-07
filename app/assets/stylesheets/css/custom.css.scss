@@ -18,9 +18,9 @@
   background-color: #f0f0f0;
  }
 
-/* Essential Ruby on Rails css start */
+ /* Essential Ruby on Rails css end */
 
-
+ /* Centering video wrapper css start */
 
 .trans-black {
 	width: 370px;
@@ -42,7 +42,11 @@
 	height: 100%;
 }
 
+ /* Centering video wrapper css end */
+
 .messagebox {height: 300px;}
+
+.margin-top-30 {margin-top: 30px;}
 
 .font18 {font-size: 18px;}
 .font20 {font-size: 20px;}
@@ -375,11 +379,11 @@ aside ul.tag_element li{
  	padding-bottom:54px;
  	 
  }
- .event_page .event_heading{
+.event_page .event_heading{
  	 
  	border-bottom: 2px solid #e8e8e8;
  }
- .event_descriptions > a {
+.event_descriptions > a {
  	color:#26211d;
  	padding: 10px 31px;
  	border:2px solid #4d4641;
@@ -393,10 +397,10 @@ aside ul.tag_element li{
      transition: all 0.4s ease-in-out 0s;
     
 }
- .event_info{
+.event_info{
  	padding-top:60px;
  }
- .event_video{
+.event_video{
  	padding-top:60px;
  }
 .event_video .event_heading {
