@@ -5,6 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+# Use randumb to solve problem of sqlite using RANDOM() vs mysql using RAND()
+# https://github.com/spilliton/randumb
+gem 'randumb'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .js.coffee assets and views

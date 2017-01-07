@@ -3,8 +3,8 @@ class HomeController < ApplicationController
 
   def index
   	@sponsors = Sponsor.all
-  	@mannerisms = Mannerism.order("RAND()").limit(1)
-
+  	# @mannerisms = Mannerism.order("RAND()").limit(1)
+    @mannerism = Mannerism.uncached { Mannerism.order_by_rand.first }
 
   end
 
