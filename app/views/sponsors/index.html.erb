@@ -17,10 +17,13 @@
               <% else %>
                 <td>Silver</td>
               <% end %>
-              <% unless sponsor.logo_url(:portrait).to_s.length == 0 %>
-                <td><%= image_tag(sponsor.logo_url(:portrait_sm).to_s) %> </td>
-              <% else %>
-                <td><%= image_tag(sponsor.logo_url(:landscape_sm).to_s) %> </td>
+              
+              <% unless sponsor.logo_url.nil? %>
+                <% unless sponsor.logo_url(:portrait).to_s.length == 0 %>
+                  <td><%= image_tag(sponsor.logo_url(:portrait_sm).to_s) %> </td>
+                <% else %>
+                  <td><%= image_tag(sponsor.logo_url(:landscape_sm).to_s) %> </td>
+                <% end %>
               <% end %>
               <td><%= sponsor.website %></td>
               <td><%= link_to 'Show', sponsor %></td>
