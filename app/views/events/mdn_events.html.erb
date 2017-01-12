@@ -16,23 +16,33 @@
           <th>Address</th>
         </tr>
       </thead>
-
       <tbody>
-        <% @events.each do |event| %>
+        <% @events.onetime.each do |event| %>
           <tr>
             <td><a href="#<%= event.title %>"><%= event.title %></a></td>
             <% if event.event_date.past? %>
-                <td><span style="color: red;">Event Completed</span></td>
+                <td><span style="color: red;">Event Passed</span></td>
             <% else %>
-                <td><span style="color: blue;">There's Still Time!</span></td>    
-            <% end %>        
-            <td><%= event.event_date.to_formatted_s(:long)   %></td>
-            <% unless event.event_end_time.blank? %>
-                <td><%= event.event_time.strftime("%I:%M %p") %> - <%= event.event_end_time.strftime("%I:%M %p") %></td>
-            <% else %>
-                <td><%= event.event_time.strftime("%I:%M %p") %></td>
+                <td><span style="color: blue;">Coming Soon!</span></td>    
             <% end %>
-
+            <td><%= event.event_date.to_formatted_s(:long) %></td>
+            <td><%= event.event_time.strftime("%I:%M %p") %> - <%= event.event_end_time.strftime("%I:%M %p") %></td>
+            <td><%= event.location %></td>
+            <td><%= event.address1 %>,
+            <% unless event.address2.blank? %>
+              <%= event.address2 %>,
+            <% end %>
+            <%= event.city %>,
+            <%= event.state %> 
+            <%= event.zipcode %>
+          </tr>
+        <% end %>
+        <% @events.ongoing.each do |event| %>
+          <tr>
+            <td><a href="#<%= event.title %>"><%= event.title %></a></td>
+            <td><span style="color: blue;"><%= event.frequency %></span></td>
+            <td><%= event.day %>s</td>      
+            <td><%= event.event_time.strftime("%I:%M %p") %> - <%= event.event_end_time.strftime("%I:%M %p") %></td>
             <td><%= event.location %></td>
             <td><%= event.address1 %>,
             <% unless event.address2.blank? %>

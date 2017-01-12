@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:mdn_events]
+  before_action :authenticate_user!, only: [:show, :edit, :update, :destroy, :sort, :index]
   layout "interior"
   # GET /events
   # GET /events.json
@@ -81,6 +81,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :event_date, :event_time, :location, :address1, :address2, :city, :state, :zipcode, :priority, :description, :event_end_time)
+      params.require(:event).permit(:title, :event_date, :event_time, :location, :address1, :address2, :city, :state, :zipcode, :priority, :description, :event_end_time, :frequency, :repeatable, :day)
     end
 end
