@@ -82,6 +82,6 @@ class AffiliatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def affiliate_params
-      params.require(:affiliate).permit(:name, :address1, :address2, :city, :state, :zipcode, :pastor, :denomination)
+      params.require(:affiliate).permit(:name, :address1, :address2, :city, :state, :zipcode, :pastor, :denomination, :website)
     end
 end

@@ -10,6 +10,7 @@
         <thead>
           <tr>
             <th>Name</th>
+            <th>Website</th>
             <th>Pastor</th>
             <th>City</th>
             <th>State</th>
@@ -20,7 +21,8 @@
         <tbody>
           <% @affiliates.each do |affiliate| %>
             <tr>
-              <td><%= affiliate.name %></td>
+              <td><%= link_to "#{affiliate.name}", "http://#{affiliate.website}", :target => "_blank" %></td>
+              <td><%= link_to "#{affiliate.website}", "http://#{affiliate.website}", :target => "_blank" %></td>
               <td><%= affiliate.pastor %></td>
               <td><%= affiliate.city %></td>
               <td><%= affiliate.state %></td>
