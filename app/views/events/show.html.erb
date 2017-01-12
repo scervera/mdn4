@@ -5,22 +5,34 @@
   <%= @event.title %>
 </p>
 <p>
-  <strong>Event date:</strong>
+  <strong>Event description:</strong>
   <%= @event.description %>
 </p>
 
 <p>
   <strong>Event date:</strong>
-  <%= @event.event_date %>
+  <%= @event.event_date.to_formatted_s(:long) %>
+</p>
+<p>
+  <strong>Is the event repeatable?</strong>
+  <%= @event.repeatable %>
+</p>
+<p>
+  <strong>How frequent is the event?</strong>
+  <%= @event.frequency %>
+</p>
+<p>
+  <strong>Event day of the week if repeatable:</strong>
+  <%= @event.day %>
 </p>
 
 <p>
   <strong>Event starting time:</strong>
-  <%= @event.event_time %>
+  <%= @event.event_time.strftime("%I:%M %p") %>
 </p>
 <p>
   <strong>Event ending time:</strong>
-  <%= @event.event_end_time %>
+  <%= @event.event_end_time.strftime("%I:%M %p") %>
 </p>
 <p>
   <strong>Location:</strong>
@@ -50,11 +62,6 @@
 <p>
   <strong>Zipcode:</strong>
   <%= @event.zipcode %>
-</p>
-
-<p>
-  <strong>Priority:</strong>
-  <%= @event.priority %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
