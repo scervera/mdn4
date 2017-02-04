@@ -47,6 +47,7 @@
 .messagebox {height: 300px;}
 
 .margin-top-30 {margin-top: 30px;}
+.margin-bottom-30 {margin-bottom: 30px;}
 
 .font18 {font-size: 18px;}
 .font20 {font-size: 20px;}
@@ -78,6 +79,41 @@
   background-color: #E7BD15;
   color: #E7BD15;
 }
+
+.blue-btn {
+  background-color: #232E5B;
+  color: #232E5B;
+}
+
+/* Custom Bootstrap Blue Button START */
+.btn-blue:active, .btn-primary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-default.active, .btn-primary.active, .btn-success.active, .btn-info.active, .btn-warning.active, .btn-danger.active {
+   	-webkit-box-shadow: none;
+   	box-shadow: none;
+  	background-image: none;
+ }
+
+.btn-blue {
+  	background: #232E5B;
+   	filter: none;
+  	border-color: #232E5B;
+  	color: #fff;
+ }
+
+.btn-blue:hover, .btn-blue:focus {
+   	background: #fff;
+  	border-color: #232E5B;
+    color: #232E5B;
+}
+
+.btn-blue:active, .btn-blue.active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-blue:disabled, .btn-blue[disabled] {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+}
+/* Custom Bootstrap Blue Button END*/
 
 /* This is CSS for the drag and drop sort */
 .sortable-placeholder {
@@ -130,7 +166,8 @@
 	padding-right: 69px
 }
 .bootcamp .btn-theme {
-	color: #ecc731;
+	// color: #ecc731;
+	color: #232E5B;
 }
 .bootcamp .btn-theme:hover, .bootcamp .btn-theme:focus {
 	color: #fff;
