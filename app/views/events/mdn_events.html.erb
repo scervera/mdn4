@@ -21,7 +21,7 @@
           <tr>
             <td><a href="#<%= event.title %>"><%= event.title %></a></td>
             <% if event.event_date.past? %>
-                <td><span style="color: red;">Event Passed</span></td>
+                <td><span style="color: red;">Event Completed</span></td>
             <% else %>
                 <td><span style="color: blue;">Coming Soon!</span></td>    
             <% end %>
