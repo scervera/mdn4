@@ -20,6 +20,17 @@
 
  /* Essential Ruby on Rails css end */
 
+ /* SC - Custom Slider Settings */
+ .sc-slider-heading strong {
+ 	font-size: 1.5em;
+ 	
+ }
+
+/* SC - needed this because there was an element.style somewhere (possibly assigned to an li) that was forcing text black below 1024 screen size */
+ .white {
+ 	color: #FFF !important;
+ }
+
  /* Centering video wrapper css start */
 
 .trans-black {
@@ -387,14 +398,11 @@ aside ul.tag_element{
 	padding-top:13px;
 }
 aside ul.tag_element li{
-  
-  
-     padding: 13px 10px;
+    padding: 13px 10px;
     display: inline-block;
     width:auto;
-      margin: 0 7px 0 0;
-	  text-align:center;
-	 
+    margin: 0 7px 0 0;
+	text-align:center; 
 }
  aside ul.tag_element li:nth-child(3){
  	padding: 13px 26px;

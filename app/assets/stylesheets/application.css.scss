@@ -4,7 +4,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-@import "css/settings.css.scss";
+
 @import "css/global.css.scss";
 @import "css/style.css.scss";
 @import "css/responsive.css.scss";
@@ -13,6 +13,10 @@
 @import "css/bootstrap-theme.css";
 @import "affiliates.css.scss";
 @import "css/custom.css.scss";
+@import "css/layers.css.scss";
+@import "css/navigation.css.scss";
+@import "css/settings.css.scss";
+@import "_banner_slider.css.scss";
 
 
 /*
