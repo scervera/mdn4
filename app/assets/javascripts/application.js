@@ -19,7 +19,7 @@
 //= require jquery.easing.min.js
 //= require jquery.themepunch.revolution.min.js
 //= require jquery.themepunch.tools.min.js
-//= require sc.revslider.js
+//= require home.revslider.js
 //= require jquery.flexslider.js
 //= require jquery.fancybox.js
 //= require custom.fancybox.js
@@ -28,7 +28,7 @@
 //= require modernizr.js
 //= require less.js
 //= require snap.svg-min.js
-
+//= require dbc-revslider.js
 //= require html.sortable.min.js
 
 //= require "extensions/revolution.extension.actions.min.js"

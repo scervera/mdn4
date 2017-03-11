@@ -847,6 +847,7 @@
 	.our-team .thumbnail{
 		margin-bottom:0;
 	}
+	// This provides the space between the menu words
 	.navbar-default .navbar-nav > li {
 		padding: 0 16px 0 0;
 	}
@@ -1246,15 +1247,15 @@
   3.) Media Query for lg
  ----------------------------- */
 
-// @media (min-width: 1025px) {
+ @media (min-width: 1025px) {
 
 // 	#wrapper.boxed {
 // 		width: 970px;
 // 	}
-// 	/*Header Section*/
-// 	.navbar-default .navbar-nav > li {
-// 		padding: 0 40px 0 0;
-// 	}
+	/*Header Section*/
+	.navbar-default .navbar-nav > li {
+		padding: 0 40px 0 0;
+	}
 //     .header-second .navbar-default .navbar-nav > li {
 // 		padding-right:0;
 // 		padding-left:40px;
@@ -1436,7 +1437,7 @@
 // 	.holders{
 // 		padding-bottom:40px;
 // 	}
-// }
+}
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	.anim-section {
