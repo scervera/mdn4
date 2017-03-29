@@ -69,6 +69,7 @@ end
 # Bundle the extra gems:
 gem 'haml'
 gem 'devise'
+gem 'pundit'
 gem "trailblazer-cells"
 gem 'cells-rails'
 gem 'rack'

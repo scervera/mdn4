@@ -1,11 +1,16 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:show, :edit, :update, :destroy, :sort, :index]
+
+  before_filter :authenticate_user!, except: :mdn_events
+  after_action :verify_authorized, except: :mdn_events
+  skip_after_action :verify_policy_scoped, only: :mdn_events
+
   layout "interior"
   # GET /events
   # GET /events.json
   def index
     @events = Event.all
+    authorize @events
   end
 
   def sort
@@ -17,26 +22,31 @@ class EventsController < ApplicationController
 
   def mdn_events
     @events = Event.all
+    # authorize @events
   end
 
   # GET /events/1
   # GET /events/1.json
   def show
+    authorize @event
   end
 
   # GET /events/new
   def new
     @event = Event.new
+    authorize @event
   end
 
   # GET /events/1/edit
   def edit
+    authorize @events
   end
 
   # POST /events
   # POST /events.json
   def create
     @event = Event.new(event_params)
+    authorize @event
 
     respond_to do |format|
       if @event.save
@@ -54,6 +64,7 @@ class EventsController < ApplicationController
   def update
     respond_to do |format|
       if @event.update(event_params)
+        authorize @event
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
         format.json { render :show, status: :ok, location: @event }
       else
