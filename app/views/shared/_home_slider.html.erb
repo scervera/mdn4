@@ -3,14 +3,15 @@
       <!-- START REVOLUTION SLIDER 5.3.1.6 fullwidth mode -->
             <div id="rev_slider_14_1" class="rev_slider fullwidthabanner tp-overflow-hidden" style="display:none;" data-version="5.3.1.6">
                   <ul>	
+                    <% unless day_after_event_display %>
+                        <!-- SLIDE  -->
+                        <%= render "/shared/slides/bootcamp_slider" %>
+                    <% end %>
                     <% if event_day_display %>
                         <!-- SLIDE  -->
                         <%= render "/shared/slides/audio_card_slider" %>
                     <% end %>
-                    <% unless event_day_display %>
-                        <!-- SLIDE  -->
-                        <%= render "/shared/slides/bootcamp_slider" %>
-                    <% end %>
+
                   	<!-- SLIDE  -->
                         <%= render "/shared/slides/one_million_slider" %>
                       
