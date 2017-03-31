@@ -1,9 +1,9 @@
 class EventsController < ApplicationController
+  before_action :authenticate_user!, except: :mdn_events
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
-  before_filter :authenticate_user!, except: :mdn_events
   after_action :verify_authorized, except: :mdn_events
-  skip_after_action :verify_policy_scoped, only: :mdn_events
+  #skip_after_action :verify_policy_scoped, only: :mdn_events
 
   layout "interior"
   # GET /events

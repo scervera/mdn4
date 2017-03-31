@@ -10,7 +10,16 @@ module TimerHelper
 	end
 
 	def audio_card_display
-		show_date = Time.local(2017, 4, 4, 12, 0)
+		show_date = Time.local(2017, 3, 4, 12, 0)
+		if Time.now < show_date
+			return false
+		else
+			return true
+		end
+	end
+
+	def event_day_display
+		show_date = Time.local(2017, 4, 1, 12, 0)
 		if Time.now < show_date
 			return false
 		else
