@@ -1,44 +1,8 @@
 
 <div id="main">
-<section class="rev_slider_wrapper banner-section">
-	<div class="rev_slider banner-slider">
-		<ul>
-			<!-- SLIDE  -->
-            
-			<li data-transition="random" data-slotamount="7" data-masterspeed="500" class="slide-3">
-				<!-- MAIN IMAGE -->
-				<%= image_tag "photos/6143023_l.jpg", alt: "banner", data: { bgfit: "cover", bgposition: "center 36%", bgrepeat: "no-repeat" } %>
-				<div
-				data-endspeed="500"
-				data-easing="easeOutCirc"
-				data-start="500"
-				data-speed="700"
-				</div>
-			</li>
-			<li data-transition="random" data-slotamount="7" data-masterspeed="500" class="slide-3">
-				<!-- MAIN IMAGE -->
-				<%= image_tag "photos/family_look_like", alt: "banner", data: { bgfit: "cover", bgposition: "center 36%", bgrepeat: "no-repeat" } %>
-				<div
-				data-endspeed="500"
-				data-easing="easeOutCirc"
-				data-start="500"
-				data-speed="700"
-				</div>
-			</li>
-			<li data-transition="random" data-slotamount="7" data-masterspeed="500" class="slide-3">
-				<!-- MAIN IMAGE -->
-				<%= image_tag "photos/40543452_l.jpg", alt: "banner", data: { bgfit: "cover", bgposition: "center 36%", bgrepeat: "no-repeat" } %>
-				<div
-				data-endspeed="500"
-				data-easing="easeOutCirc"
-				data-start="500"
-				data-speed="700"
-				</div>
-			</li>
 
-        </ul>
-	</div>
-</section>
+	<%= render "/shared/curriculum_slider" %>
+
 <div class="content-wrapper" id="page-info">
     <div class="container">
 		<!-- Our Story Section Start Here -->
@@ -63,6 +27,12 @@
 							</li> -->
 							</ul>
 						</section>
+						<h2 class="text-center">
+							Next W.E.A.P.O.N.S.<sup>®</sup> Intensive Training Event June 10th in Syracuse, NY
+		                </h2>
+		                <p class="text-center">
+		                    <a data-toggle="modal" href="http://events.eventzilla.net/e/mdn-weapons-intensive-at-syracuse-2138913779" class="btn btn-blue btn-lg">REGISTER</a>
+		                </p>
 					</div>
 					<div class="col-xs-12 col-sm-7">
 						<strong class="article-sammury">
