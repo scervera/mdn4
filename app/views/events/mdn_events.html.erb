@@ -61,7 +61,7 @@
     <% @events.each do |event| %>
     <a name="<%= event.title %>"></a>
     <h2 class=""><%= event.title %></h2>
-    <p><%= event.description %></p>
+    <p><%= event.description.html_safe %></p>
     </br><a href="#events">Back to top</a> &uarr;</br></br></br>
     <% end %> 
   </div>
