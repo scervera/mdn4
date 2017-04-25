@@ -1,12 +1,13 @@
 # Load DSL and set up stages
 require 'capistrano/setup'
 
-#https://github.com/capistrano-plugins/capistrano-ssh-doctor 
-require 'capistrano/ssh_doctor'
 # Include default deployment tasks
 require 'capistrano/deploy'
 
-require 'capistrano/rails'
+#https://github.com/capistrano-plugins/capistrano-ssh-doctor 
+require 'capistrano/ssh_doctor'
+
+
 
 # Include capistrano-secrets-yml gem
 require 'capistrano/secrets_yml'
@@ -27,6 +28,7 @@ require 'capistrano/rvm'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
+require 'capistrano/rails'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'

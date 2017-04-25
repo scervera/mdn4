@@ -17,6 +17,10 @@ class EventPolicy
   def show?
     @current_user.admin?
   end
+
+  def new?
+    @current_user.admin?
+  end
   
   def edit?
     @current_user.admin?
