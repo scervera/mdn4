@@ -19,10 +19,10 @@ app/.DS_Store
 /log/*.log
 /tmp
 /themeforest-9195328-charity-nonprofitngofundraising-html-template
-config/secrets.yml
 
 .capistrano
 config/secrets.yml
+config/database.yml
 
 # Ignore application configuration
 /config/application.yml
