@@ -21,8 +21,8 @@ app/.DS_Store
 /themeforest-9195328-charity-nonprofitngofundraising-html-template
 
 .capistrano
-config/secrets.yml
-config/database.yml
+/config/secrets.yml
+/config/database.yml
 
 # Ignore application configuration
 /config/application.yml

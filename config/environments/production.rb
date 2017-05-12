@@ -82,8 +82,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :address              => "smtp.mensdiscipleshipnetwork.com",
     :domain               => 'mensdiscipleshipnetwork.com',
-    :user_name            => 'info@mensdiscipleshipnetwork.com',
-    :password             => 'John1010',
+    :user_name            => ENV["MDN_EMAIL_USERNAME"],
+    :password             => ENV["MDN_EMAIL_PASSWORD"],
     :port                 => 587,
     :authentication       => 'login',
     :openssl_verify_mode  => 'none',
