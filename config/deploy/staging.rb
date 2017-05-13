@@ -17,7 +17,7 @@
 
 # server 'staging.mensdiscipleshipnetwork.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
-server 'ec2-35-165-98-246.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'ec2-34-210-147-67.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
 set :branch, 'newdeploy'
 
