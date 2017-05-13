@@ -10,6 +10,7 @@
 *.DS_Store
 */.DS_Store
 app/.DS_Store
+config/.DS_Store
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
