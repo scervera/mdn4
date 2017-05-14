@@ -59,6 +59,9 @@ GEM
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    capistrano-database-yml (1.0.1)
+      capistrano (>= 3.1)
+      sshkit (>= 1.2.0)
     capistrano-harrow (0.5.3)
     capistrano-rails (1.1.7)
       capistrano (~> 3.1)
@@ -71,8 +74,6 @@ GEM
       sshkit (>= 1.2.0)
     capistrano-ssh-doctor (1.0.0)
       capistrano (>= 3.1)
-    capistrano-upload-config (0.7.0)
-      capistrano (>= 3.0)
     carrierwave (1.0.0.rc)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -288,11 +289,11 @@ DEPENDENCIES
   cancan
   capistrano
   capistrano-bundler
+  capistrano-database-yml (~> 1.0.0)
   capistrano-rails
   capistrano-rvm
   capistrano-secrets-yml (~> 1.0.0)
   capistrano-ssh-doctor (~> 1.0)
-  capistrano-upload-config
   carrierwave (>= 1.0.0.rc, < 2.0)
   cells-rails
   coffee-rails

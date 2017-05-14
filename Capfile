@@ -12,6 +12,10 @@ require 'capistrano/ssh_doctor'
 # Include capistrano-secrets-yml gem
 require 'capistrano/secrets_yml'
 
+# Include https://github.com/potsbo/capistrano-database-yml gem
+# create database.yml file on the remote server by executing this task: bundle exec cap production setup
+require 'capistrano/database_yml'
+
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:

@@ -62,6 +62,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-rails'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
+  gem 'capistrano-database-yml', '~> 1.0.0'
   gem 'capistrano-bundler'
   gem 'capistrano-ssh-doctor', '~> 1.0'
 end
@@ -91,6 +92,4 @@ gem 'twitter'
 gem 'simple_form'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-# https://github.com/rjocoleman/capistrano-upload-config
-gem 'capistrano-upload-config'
 gem 'figaro'
