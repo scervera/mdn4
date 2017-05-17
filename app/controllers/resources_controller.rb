@@ -8,7 +8,7 @@ class ResourcesController < ApplicationController
   # GET /resources
   # GET /resources.json
   def index
-    @resources = Resource.all
+    @resources = Resource.all.order("created_at DESC")
   end
 
   # GET /resources/1
