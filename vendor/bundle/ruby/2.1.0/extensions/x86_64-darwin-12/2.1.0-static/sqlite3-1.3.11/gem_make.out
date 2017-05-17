@@ -19,6 +19,13 @@ make "DESTDIR=" clean
 make "DESTDIR="
 compiling backup.c
 compiling database.c
+database.c:205:3: warning: 'sqlite3_trace' is deprecated [-Wdeprecated-declarations]
+  sqlite3_trace(ctx->db, NIL_P(block) ? NULL : tracefunc, (void *)self);
+  ^
+/usr/include/sqlite3.h:2850:36: note: 'sqlite3_trace' has been explicitly marked deprecated here
+SQLITE_API SQLITE_DEPRECATED void *sqlite3_trace(sqlite3*,
+                                   ^
+1 warning generated.
 compiling exception.c
 compiling sqlite3.c
 compiling statement.c
@@ -26,5 +33,5 @@ linking shared-object sqlite3/sqlite3_native.bundle
 ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
 
 make "DESTDIR=" install
-/usr/bin/install -m 0755 sqlite3_native.bundle ./.gem.20160813-72415-oceg5b/sqlite3
+/usr/bin/install -m 0755 sqlite3_native.bundle ./.gem.20170517-15257-1ylg1wo/sqlite3
 installing default sqlite3_native libraries

@@ -1,6 +1,7 @@
 class ResourcesController < ApplicationController
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index]
+  after_action :verify_authorized, except: [:index]
 
   layout "interior"
 
@@ -13,21 +14,25 @@ class ResourcesController < ApplicationController
   # GET /resources/1
   # GET /resources/1.json
   def show
+    authorize @resource
   end
 
   # GET /resources/new
   def new
     @resource = Resource.new
+    authorize @resource
   end
 
   # GET /resources/1/edit
   def edit
+    authorize @resource
   end
 
   # POST /resources
   # POST /resources.json
   def create
     @resource = Resource.new(resource_params)
+    authorize @resource
 
     respond_to do |format|
       if @resource.save
@@ -45,6 +50,7 @@ class ResourcesController < ApplicationController
   def update
     respond_to do |format|
       if @resource.update(resource_params)
+        authorize @resource
         format.html { redirect_to @resource, notice: 'Resource was successfully updated.' }
         format.json { render :show, status: :ok, location: @resource }
       else
