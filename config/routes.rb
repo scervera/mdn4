@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :resources
+
   resources :events do
     get 'mdn_events', :on => :collection
     put :sort, on: :collection
@@ -85,7 +87,7 @@ Rails.application.routes.draw do
   match "ourfounder" => "pages#ourfounder", via: :get
 
   get 'pages/resources'
-  match "resources" => "pages#resources", via: :get
+  # match "resources" => "pages#resources", via: :get
 
   get "pages/testimonies"
   match "testimonies" => "pages#testimonies", via: :get
