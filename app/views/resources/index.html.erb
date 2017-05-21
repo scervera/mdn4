@@ -10,7 +10,7 @@
                 <p>There are no resources currently available</p>
               </div>
             <% end %>
-            <% @resources.each do |resource| %>
+            <% @resources.prioritized.each do |resource| %>
                 <div class="event_heading clearfix">
                   <div class="event_detail">
                     <% unless resource.video_url.empty? %>
@@ -31,20 +31,15 @@
                     <% unless resource.attachments.empty? %>     
                       <% resource.attachments.each do |attachment| %>
                         <a href="<%= attachment.url %>" class="btn btn-default" download="<%= File.basename(attachment.path) %>" >Download</a> <%= File.basename(attachment.path) %></br></br>
-                        
                       <% end %>
                     <% end %>
                   </div> 
-                <% if user_signed_in? %>
-                  <%= link_to 'Show', resource %>
-                  <%= link_to 'Edit', edit_resource_path(resource) %>
-                  <%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %>
-                <% end %>
                 </div> 
             <% end %> 
           </br>
             <% if user_signed_in? %>
-              <%= link_to 'New Resource', new_resource_path %>
+              <%= link_to 'New Resource', new_resource_path %> | 
+              <%= link_to 'Resource List', listing_resources_path %>
             <% end %>  
             </div> 
           </div>

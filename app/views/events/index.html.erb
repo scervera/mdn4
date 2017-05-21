@@ -7,7 +7,7 @@
   <div class="col-xs-1"></div>
     <div class="col-xs-10">
       <table class="table table-striped">
-        <tbody class="sortable">
+        <tbody class="event-sortable">
 <!--           <thead>
             <tr>
               <th>Title</th>
@@ -21,7 +21,7 @@
               <th>Zipcode</th>
             </tr>
           </thead> -->
-          <% @events.onetime.each do |event| %>
+          <% @events.prioritized.onetime.each do |event| %>
             <tr class="sortable-row" data-id="<%= event.id %>">
               <td><%= event.title %></td>
               <td><%=truncate(event.description, length: 40, separator: ' ')%></td>
@@ -32,12 +32,13 @@
               <td><%= event.city %></td>
               <td><%= event.state %></td>
               <td><%= event.zipcode %></td>
+              <td>Priority: <%= event.priority %> </td>
               <td><%= link_to 'Show', event %></td>
               <td><%= link_to 'Edit', edit_event_path(event) %></td>
               <td><%= link_to 'Delete', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
-          <% @events.ongoing.each do |event| %>
+          <% @events.prioritized.ongoing.each do |event| %>
             <tr class="sortable-row" data-id="<%= event.id %>">
               <td><%= event.title %></td>
               <td><%=truncate(event.description, length: 40, separator: ' ')%></td>
@@ -48,6 +49,7 @@
               <td><%= event.city %></td>
               <td><%= event.state %></td>
               <td><%= event.zipcode %></td>
+              <td>Priority: <%= event.priority %> </td>
               <td><%= link_to 'Show', event %></td>
               <td><%= link_to 'Edit', edit_event_path(event) %></td>
               <td><%= link_to 'Delete', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -10,6 +10,10 @@ class EventPolicy
     @current_user.admin?
   end
 
+  def sort?
+    @current_user.admin?
+  end
+
   # def mdn_events?
   #   @current_user.admin?
   # end

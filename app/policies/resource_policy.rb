@@ -6,6 +6,14 @@ class ResourcePolicy
     @resource = resource
   end
 
+  def listing?
+    @current_user.admin?
+  end
+
+  def sort?
+    @current_user.admin?
+  end
+
   def show?
     @current_user.admin?
   end

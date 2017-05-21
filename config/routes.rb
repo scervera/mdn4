@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  resources :resources
+  resources :resources do
+    get 'listing', :on => :collection
+    put :sort, on: :collection
+  end
 
   resources :events do
     get 'mdn_events', :on => :collection

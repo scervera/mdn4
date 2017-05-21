@@ -9,9 +9,9 @@ $(this).attr("data-pos",i+1);
 ready = function(){
 // call set_positions function
 set_positions();
-$('.sortable').sortable();
+$('.affiliates-sortable').sortable();
 // after the order changes
-$('.sortable').sortable().bind('sortupdate', function(e, ui) {
+$('.affiliates-sortable').sortable().bind('sortupdate', function(e, ui) {
 // array to store new order
         updated_order = []
 // set the updated positions

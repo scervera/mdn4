@@ -1,14 +1,26 @@
 class ResourcesController < ApplicationController
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index]
-  after_action :verify_authorized, except: [:index]
+  after_action :verify_authorized, except: [:index, :sort]
 
   layout "interior"
 
   # GET /resources
   # GET /resources.json
   def index
-    @resources = Resource.all.order("created_at DESC")
+    @resources = Resource.all
+  end
+  
+  def sort
+    params[:order].each do |key,value|
+      Resource.find(value[:id]).update_attribute(:priority,value[:position])
+    end
+    render :nothing => true
+  end
+
+  def listing
+    @resources = Resource.all
+    authorize @resources
   end
 
   # GET /resources/1
@@ -64,6 +76,7 @@ class ResourcesController < ApplicationController
   # DELETE /resources/1.json
   def destroy
     @resource.destroy
+    authorize @resource
     respond_to do |format|
       format.html { redirect_to resources_url, notice: 'Resource was successfully destroyed.' }
       format.json { head :no_content }
@@ -78,6 +91,6 @@ class ResourcesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def resource_params
-      params.require(:resource).permit(:title, :description, :video_url, :preview, :remove_attachments, {attachments: []})
+      params.require(:resource).permit(:title, :description, :video_url, :preview, :priority, :remove_attachments, {attachments: []})
     end
 end

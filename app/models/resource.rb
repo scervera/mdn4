@@ -1,4 +1,6 @@
 class Resource < ActiveRecord::Base
+	scope :prioritized, -> { order("priority ASC") }
+	
 	mount_uploaders :attachments, AttachmentUploader
 	serialize :attachments, JSON
 
