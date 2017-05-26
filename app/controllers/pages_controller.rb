@@ -48,6 +48,9 @@ class PagesController < ApplicationController
   def resources
   end
 
+  def store
+  end
+
   def testimonies
   end
 

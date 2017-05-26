@@ -104,6 +104,9 @@ Rails.application.routes.draw do
   get 'pages/dbc2017'
   match "dbc2017" => "pages#dbc2017", via: :get
 
+  get 'pages/store'
+  match "store" => "pages#store", via: :get
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
