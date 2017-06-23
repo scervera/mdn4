@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :authenticate_user!, except: :mdn_events
   before_action :set_event, only: [:show, :update, :destroy, :edit]
 
-  after_action :verify_authorized, only: [:edit, :sort]
+  after_action :verify_authorized, only: [:edit, :sort, :create]
   #skip_after_action :verify_policy_scoped, only: :mdn_events
 
   layout "interior"
