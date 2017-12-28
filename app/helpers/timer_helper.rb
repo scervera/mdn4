@@ -19,7 +19,7 @@ module TimerHelper
 	end
 
 	def event_day_display
-		show_date = Time.local(2017, 4, 1, 8, 0)
+		show_date = Time.local(2018, 4, 21, 8, 0)
 		if Time.now < show_date
 			return false
 		else
@@ -27,7 +27,7 @@ module TimerHelper
 		end
 	end
 	def day_after_event_display
-		show_date = Time.local(2017, 4, 2, 8, 0)
+		show_date = Time.local(2018, 4, 22, 8, 0)
 		if Time.now < show_date
 			return false
 		else
