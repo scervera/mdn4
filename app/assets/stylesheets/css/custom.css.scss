@@ -20,6 +20,13 @@
 
  /* Essential Ruby on Rails css end */
 
+@font-face {
+	font-family: 'impact';
+	src: font-url('copyfonts.com_impact-opentype.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
  /* SC - Custom Slider Settings */
  .sc-slider-heading strong {
  	font-size: 1.5em;
@@ -200,6 +207,10 @@
 }
 .bootcamp .btn-theme:hover, .bootcamp .btn-theme:focus {
 	color: #fff;
+}
+
+.bootcamp-color {
+	background-color: #393745;
 }
 
 /* 22.)Event Details

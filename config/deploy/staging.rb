@@ -17,9 +17,9 @@
 
 # server 'staging.mensdiscipleshipnetwork.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
-server 'ec2-34-210-147-67.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'ec2-34-212-13-16.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
-set :branch, 'shopping_cart'
+#set :branch, 'shopping_cart'
 
 # Custom SSH Options
 # ==================
