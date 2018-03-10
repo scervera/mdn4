@@ -21,6 +21,8 @@
 server 'railroad.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
+#set :rvm_ruby_version, '2.1.1'      # Defaults to: 'default'
+
 
 
 # Custom SSH Options

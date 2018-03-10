@@ -4,7 +4,9 @@ lock '>=3.6.0'
 
 set :application, 'mdn3app'
 
-set :repo_url, 'ssh://adm1n@quark.cerveraweb.com/Volumes/Data/git/mdn3.git'
+# capistrano will download an app from "master" branch of this repository:
+set :repo_url, 'git@github.com:scervera/mdn4.git'
+#set :repo_url, 'ssh://adm1n@quark.cerveraweb.com/Volumes/Data/git/mdn3.git'
 #set :repo_url, 'ssh://quark.cerveraweb.com/git/mdn2.git'
 #set :repo_url, 'ssh://quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :repo_url, 'https://adm1n:redeemed1@quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
