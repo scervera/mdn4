@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-sm-1"></div>
+
+  <div class="our-team row">
+    <div class="col-xs-10">
+      <h1>Affiliates Churches</h1>
+      <p>Men's Discipleship Network is grateful for the partnership and support of the following churches.</p>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Website</th>
+            <th>Pastor</th>
+            <th>City</th>
+            <th>State</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @affiliates.each do |affiliate| %>
+            <tr>
+              <td><%= link_to "#{affiliate.name}", "http://#{affiliate.website}", :target => "_blank" %></td>
+              <td><%= link_to "#{affiliate.website}", "http://#{affiliate.website}", :target => "_blank" %></td>
+              <td><%= affiliate.pastor %></td>
+              <td><%= affiliate.city %></td>
+              <td><%= affiliate.state %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br>
+    </div>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+
+

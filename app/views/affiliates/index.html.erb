@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>MDN Affiliated Churches</h1>
+<p>This page is for the website administrators to create or delete affiliates so they are viewable on the website and to order them in the priority that is desired for them to be seen. Re-ordering can be accomplished by dragging and dropping the items in the list. This will automatically be changed on the webpage that our visitors will see.</p>
+
+<div class="row">
+	<div class="col-xs-1"></div>
+    <div class="col-xs-10">
+		<table class="table table-striped">
+		  <tbody class="affiliates-sortable">
+		    <% @affiliates.each do |affiliate| %>
+		      <tr class="sortable-row" data-id="<%= affiliate.id %>">
+		        <td><%= affiliate.name %></td>
+		        <td><%= affiliate.website %></td>
+		        <td><%= affiliate.city %></td>
+		        <td><%= affiliate.state %></td>
+		        <td><%= affiliate.zipcode %></td>
+		        <td><%= affiliate.pastor %></td>
+		        <td><%= affiliate.denomination %></td>
+		        <td><%= link_to 'Show', affiliate %></td>
+		        <td><%= link_to 'Edit', edit_affiliate_path(affiliate) %></td>
+		        <td><%= link_to 'Delete', affiliate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		      </tr>
+		    <% end %>
+		  </tbody>
+		</table>
+
+		<%= link_to 'Add Church', new_affiliate_path %>
+	    </br>
+	    </br>
+    </div>
+    <div class="col-xs-1"></div>
+</div>

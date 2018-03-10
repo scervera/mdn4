@@ -1,0 +1,72 @@
+    <!-- Our Team Section Start Here -->
+<div class="row">
+  <div class="col-sm-1"></div>
+
+      <div class="our-team row">
+        <div class="col-xs-10">
+          <header class="center">
+            <h2>Thank You to <strong class="">Our Sponsors</strong></h2>
+          </header>
+          <div>
+            <h3><span style="color:#C5B358;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Gold Sponsors</span></h3>
+          </div>
+          <div class="row">
+            <!-- This begins the loop for each sponsor in the collection -->
+            <% @sponsors.gold.each do |sponsor| %>
+              <div class="col-xs-12 col-sm-2 text-center">
+                <div class="sponsor-caption">
+                    <h5><%= sponsor.name %></h5>
+                </div>
+                <div class="sponsor-thumb">
+                  <% unless sponsor.logo_url(:portrait).to_s.length == 0 %>
+                      <figure><%= link_to( image_tag(sponsor.logo_url(:portrait).to_s), "http://#{sponsor.website}", :target => "_blank") %> </figure>
+                  <% else %>
+                      <figure><%= link_to( image_tag(sponsor.logo_url(:landscape).to_s), "http://#{sponsor.website}", :target => "_blank") %> </figure>
+                  <% end %>
+                  
+                </div>
+              </div>
+            <% end %>
+                  
+
+            <!-- This ends the loop for each sponsor in the collection -->
+          </div>
+        </div>
+      </div>
+  <div class="col-sm-1"></div>
+</div>
+<div class="row">
+  <div class="col-sm-1"></div>
+      
+      <div class="our-team row">
+        <div class="col-xs-10">
+          <div><h3><span style="color:#C0C0C0;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Silver Sponsors</span></h3></div>
+          <div class="row">
+            <!-- This begins the loop for each sponsor in the collection -->
+            <% @sponsors.silver.each do |sponsor| %>
+              <div class="col-xs-12 col-sm-2 text-center">
+                <div class="sponsor-caption">
+                    <h5><%= sponsor.name %></h5>
+                </div>
+                <div class="sponsor-thumb">
+                  <% unless sponsor.logo_url(:portrait).to_s.length == 0 %>
+                      <figure><%= link_to( image_tag(sponsor.logo_url(:portrait).to_s), "http://#{sponsor.website}", :target => "_blank") %> </figure>
+                  <% else %>
+                      <figure><%= link_to( image_tag(sponsor.logo_url(:landscape).to_s), "http://#{sponsor.website}", :target => "_blank") %> </figure>
+                  <% end %>
+                  
+                </div>
+              </div>
+            <% end %>
+            <!-- This ends the loop for each sponsor in the collection -->
+          </div>
+        </div>
+      </div>
+  <div class="col-xs-1"></div>
+</div>
+</br>
+</br>
+
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <div id="header" class="mailer_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Thank you for your message, <%= @visitor.name %></h1>
+            <p>
+              We appreciate you reaching out to us. Your feedback and contact is very important to us. If you would like to 
+              keep up to date with what MDN is doing, sign up to receive our MDN Newsletter <a href="http://eepurl.com/cdAGvT">here.</a><br>
+            </p>
+            <p>Thank you.</p>
+            </br>
+            <%= image_tag attachments['mdn_logo_bk.jpg'].url %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

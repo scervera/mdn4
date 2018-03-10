@@ -1,0 +1,1 @@
+json.partial! "mannerisms/mannerism", mannerism: @mannerism

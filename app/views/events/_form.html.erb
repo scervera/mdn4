@@ -1,0 +1,46 @@
+<%= simple_form_for(@event) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title, autofocus: true %>
+    <%= f.input :description %>
+    <%= f.input :location %>
+    <%= f.input :address1 %>
+    <%= f.input :address2 %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zipcode %>
+    <%= f.input :repeatable, as: :boolean, checked_value: true, unchecked_value: false, label: "Is this a repeatable event?" %>
+        <div id="is_repeatable" style="display:none;">
+          <%= f.input :frequency, label: 'How frequent does this event occur?', collection: ['Daily', 'Weekly', 'Bi-weekly', 'Monthly', 'Yearly'] %>
+          <%= f.input :day, label: 'What day is this event held on?', collection: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] %>
+        </div>
+        <div id="date" style="display:block;">
+           <%= f.input :event_date %>
+        </div>
+    
+    <%= f.input :event_time, label: 'Time event begins' %>
+    <%= f.input :event_end_time, label: 'Time event ends (not required)' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+  var checkbox = document.getElementById('event_repeatable');
+  var details_div = document.getElementById('is_repeatable');
+  var date_div = document.getElementById('date');
+  date1 = document.getElementById('event_date');
+  
+  checkbox.onchange = function() {
+     if(this.checked) {
+       details_div.style['display'] = 'block';
+       date_div.style['display'] = 'none';
+     } else {
+       details_div.style['display'] = 'none';
+       date_div.style['display'] = 'block';
+     }
+  };
+</script>

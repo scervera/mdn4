@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @affiliate.name %>
+</p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @affiliate.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @affiliate.address2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @affiliate.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @affiliate.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @affiliate.zipcode %>
+</p>
+
+<p>
+  <strong>Pastor:</strong>
+  <%= @affiliate.pastor %>
+</p>
+
+<p>
+  <strong>Denomination:</strong>
+  <%= @affiliate.denomination %>
+</p>
+<p>
+  <strong>Website:</strong>
+  <%= @affiliate.website %>
+</p>
+
+<%= link_to 'Edit', edit_affiliate_path(@affiliate) %> |
+<%= link_to 'Back to List', affiliates_path %>

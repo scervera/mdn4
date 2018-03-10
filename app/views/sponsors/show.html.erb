@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sponsor.name %>
+</p>
+<p>
+  <strong>Website:</strong>
+  <%= @sponsor.website %>
+</p>
+<p>
+  <strong>Level:</strong>
+  <% if @sponsor.level == "1" %>
+    Gold 
+  <% else %>
+    Silver
+  <% end %>
+  <%= @sponsor.level %>
+</p>
+
+<% unless @sponsor.logo_url(:portrait).to_s.length == 0 %>
+	<p>
+	  <%= image_tag(@sponsor.logo_url(:portrait).to_s)  %>
+	</p>
+<% end %>
+
+<% unless @sponsor.logo_url(:portrait).to_s.length == 0 %>
+	<p>
+	  <%= image_tag(@sponsor.logo_url(:portrait_sm).to_s) %>
+	</p>
+<% end %>
+
+<% unless @sponsor.logo_url(:landscape).to_s.length == 0 %>
+	<p>
+	  <%= image_tag(@sponsor.logo_url(:landscape).to_s) %>
+	</p>
+<% end %>
+
+<% unless @sponsor.logo_url(:landscape).to_s.length == 0 %>
+	<p>
+	  <%= image_tag(@sponsor.logo_url(:landscape_sm).to_s) %>
+	</p>
+<% end %>
+
+<%= link_to 'Edit', edit_sponsor_path(@sponsor) %> |
+<%= link_to 'Back', sponsors_path %>

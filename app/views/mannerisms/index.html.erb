@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing of Mannerisms</h1>
+<p>This page is for the website administrators to create new mannerisms so they are viewable on the website and to order them in the priority that is desired for them to be seen. Re-ordering can be accomplished by dragging and dropping the items in the list. This will automatically be changed on the webpage that our visitors will see.</p>
+
+<div class="row">
+  <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+      <table class="table table-striped">
+        <tbody class="mannerism-sortable">
+          <% @mannerisms.each do |mannerism| %>
+            <tr class="sortable-row" data-id="<%= mannerism.id %>">
+              <td><%= mannerism.quote %></td>
+              <td><%= mannerism.author %></td>
+              <td><%= link_to 'Show', mannerism %></td>
+              <td><%= link_to 'Edit', edit_mannerism_path(mannerism) %></td>
+              <td><%= link_to 'Delete', mannerism, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'New Mannerism', new_mannerism_path %>
