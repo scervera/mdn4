@@ -104,6 +104,9 @@ Rails.application.routes.draw do
   get 'pages/dbc2017'
   match "dbc2017" => "pages#dbc2017", via: :get
 
+  get 'pages/dbc2018'
+  match "dbc2018" => "pages#dbc2018", via: :get
+
   get 'pages/store'
   match "store" => "pages#store", via: :get
 

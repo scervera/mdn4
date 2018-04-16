@@ -21,6 +21,9 @@ class PagesController < ApplicationController
   def curriculum
   end
 
+  def dbc2018
+  end
+
   def donate
   end
 

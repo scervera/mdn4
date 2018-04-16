@@ -18,7 +18,8 @@
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'railroad.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'ec2-52-14-36-236.us-east-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/mdn_key_pair.pem"]
+#server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 # server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
 
