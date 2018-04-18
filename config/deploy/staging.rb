@@ -18,9 +18,10 @@
 # server 'staging.mensdiscipleshipnetwork.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
 #server 'ec2-34-212-13-16.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
-server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+#server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'aws1.mensdiscipleshipnetwork.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/mdn_key_pair.pem"]
 
-#set :branch, 'shopping_cart'
+set :branch, 'AWS_migration'
 
 # Custom SSH Options
 # ==================
