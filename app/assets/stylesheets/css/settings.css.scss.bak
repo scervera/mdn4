@@ -70,11 +70,11 @@ website:   	http://www.themepunch.com
 .rtl {	direction: rtl;}
 @font-face {
   font-family: 'revicons';
-  src: font-url('revicons.eot?5510888');
-  src: font-url('revicons.eot?5510888#iefix') format('embedded-opentype'),
-       font-url('revicons.woff?5510888') format('woff'),
-       font-url('revicons.ttf?5510888') format('truetype'),
-       font-url('revicons.svg?5510888#revicons') format('svg');
+  src: url('../fonts/revicons/revicons.eot?5510888');
+  src: url('../fonts/revicons/revicons.eot?5510888#iefix') format('embedded-opentype'),
+       url('../fonts/revicons/revicons.woff?5510888') format('woff'),
+       url('../fonts/revicons/revicons.ttf?5510888') format('truetype'),
+       url('../fonts/revicons/revicons.svg?5510888#revicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -996,8 +996,8 @@ img.tp-slider-alternative-image	{
 
 
 .caption.slidelink a div,
-.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(image_path('coloredbg.png')) repeat}
-.tp-caption.slidelink a span{	background:url(image_path('coloredbg.png')) repeat}
+.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(../assets/coloredbg.png) repeat}
+.tp-caption.slidelink a span{	background:url(../assets/coloredbg.png) repeat}
 .tp-shape {	width:100%;height:100%;}
 
 
