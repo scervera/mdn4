@@ -7,9 +7,13 @@ require 'capistrano/deploy'
 #https://github.com/capistrano-plugins/capistrano-ssh-doctor 
 require 'capistrano/ssh_doctor'
 
+#https://github.com/chouandy/capistrano-figaro-yml  
+# Copies over application.yml when you run cap setup command
+require 'capistrano/figaro_yml'
 
-
+# https://github.com/capistrano-plugins/capistrano-secrets-yml
 # Include capistrano-secrets-yml gem
+# Copies over secrets.yml when you run cap setup command
 require 'capistrano/secrets_yml'
 
 # Include https://github.com/potsbo/capistrano-database-yml gem
