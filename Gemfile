@@ -64,6 +64,7 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
   gem 'capistrano-database-yml', '~> 1.0.0'
+  gem 'capistrano-figaro-yml', '~> 1.0.2'
   gem 'capistrano-bundler'
   gem 'capistrano-ssh-doctor', '~> 1.0'
   gem "better_errors"
