@@ -27,6 +27,7 @@
 
 # Ignore application configuration
 /config/application.yml
+/config/application.yml.bak
 
 #/vendor/bundle/*
 /public/uploads/*
