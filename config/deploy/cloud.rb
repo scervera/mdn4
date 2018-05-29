@@ -22,6 +22,7 @@
 #server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 server 'ec2-18-217-78-255.us-east-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/mdn_key_pair.pem"]
 
+
 #set :rvm_ruby_version, '2.1.1'      # Defaults to: 'default'
 
 
