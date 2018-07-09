@@ -45,6 +45,9 @@ class PagesController < ApplicationController
   def my_story
   end
 
+  def moty
+  end
+
   def ourfounder
   end
 

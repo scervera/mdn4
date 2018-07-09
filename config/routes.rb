@@ -101,6 +101,9 @@ Rails.application.routes.draw do
   get "pages/my_story"
   match "my_story" => "pages#my_story", via: :get
 
+  get "pages/moty"
+  match "moty" => "pages#moty", via: :get
+
   get 'pages/dbc2017'
   match "dbc2017" => "pages#dbc2017", via: :get
 
